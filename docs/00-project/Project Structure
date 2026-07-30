@@ -1,0 +1,365 @@
+==========================================================
+PASAR PINTAR ERP
+==========================================================
+
+Document ID     : DOC-PROJ-006
+Title           : Project Structure
+Version         : 0.1.0
+Status          : Final
+Author          : [F][N][R]
+Last Update     : 2026-07-30
+Module          : Project
+Category        : Documentation
+Priority        : Critical
+Related Docs    : README.md, Scope.md, FeatureList.md
+
+==========================================================
+
+# Project Structure
+
+## Overview
+
+Dokumen ini mendefinisikan struktur repository resmi
+Pasar Pintar ERP.
+
+Seluruh pengembangan wajib mengikuti struktur ini.
+
+==========================================================
+
+# Root Directory
+
+pasarpintar/
+
+backend/
+
+frontend/
+
+mobile/
+
+docs/
+
+database/
+
+deployment/
+
+scripts/
+
+tools/
+
+assets/
+
+design/
+
+.github/
+
+==========================================================
+
+# Backend
+
+backend/
+
+src/
+
+auth/
+
+users/
+
+role/
+
+permission/
+
+tenant/
+
+company/
+
+branch/
+
+category/
+
+brand/
+
+unit/
+
+vendor/
+
+customer/
+
+product/
+
+warehouse/
+
+inventory/
+
+purchase/
+
+sales/
+
+finance/
+
+crm/
+
+dashboard/
+
+system/
+
+ai/
+
+common/
+
+config/
+
+prisma/
+
+==========================================================
+
+# Frontend
+
+frontend/
+
+app/
+
+components/
+
+hooks/
+
+lib/
+
+services/
+
+types/
+
+stores/
+
+styles/
+
+public/
+
+==========================================================
+
+# Mobile
+
+mobile/
+
+android/
+
+ios/
+
+lib/
+
+assets/
+
+==========================================================
+
+# Documentation
+
+docs/
+
+management/
+
+technical/
+
+api/
+
+database/
+
+workflow/
+
+ui/
+
+security/
+
+ai/
+
+==========================================================
+
+# Database
+
+database/
+
+schema/
+
+migration/
+
+seed/
+
+backup/
+
+erd/
+
+==========================================================
+
+# Deployment
+
+deployment/
+
+docker/
+
+nginx/
+
+ubuntu/
+
+kubernetes/
+
+==========================================================
+
+# Scripts
+
+scripts/
+
+backup/
+
+restore/
+
+migration/
+
+seed/
+
+deploy/
+
+==========================================================
+
+# Assets
+
+assets/
+
+logo/
+
+image/
+
+icon/
+
+banner/
+
+==========================================================
+
+# Design
+
+design/
+
+figma/
+
+wireframe/
+
+prototype/
+
+==========================================================
+
+# GitHub
+
+.github/
+
+workflows/
+
+ISSUE_TEMPLATE/
+
+PULL_REQUEST_TEMPLATE/
+
+==========================================================
+
+# Naming Standard
+
+Folder
+
+lowercase
+
+File
+
+kebab-case
+
+Class
+
+PascalCase
+
+Variable
+
+camelCase
+
+Constant
+
+UPPER_CASE
+
+==========================================================
+
+# Backend Module Standard
+
+module/
+
+dto/
+
+entities/
+
+controller/
+
+service/
+
+repository/
+
+interface/
+
+mapper/
+
+validator/
+
+==========================================================
+
+# Frontend Module Standard
+
+module/
+
+page/
+
+components/
+
+hooks/
+
+service/
+
+store/
+
+types/
+
+==========================================================
+
+# API Standard
+
+/api/v1/
+
+Seluruh endpoint menggunakan versi API.
+
+Contoh
+
+/api/v1/products
+
+/api/v1/purchase-orders
+
+/api/v1/stock
+
+==========================================================
+
+# Configuration
+
+Seluruh konfigurasi menggunakan ENV.
+
+Tidak diperbolehkan hardcode.
+
+==========================================================
+
+# Success Criteria
+
+Seluruh developer menggunakan struktur yang sama.
+
+Seluruh modul mudah ditemukan.
+
+Seluruh file memiliki lokasi yang konsisten.
+
+==========================================================
+
+Document Control
+
+Status          : Final
+
+Next Document   : DevelopmentPrinciple.md
+
+Approved By     : [F][N][R]
+
+==========================================================
