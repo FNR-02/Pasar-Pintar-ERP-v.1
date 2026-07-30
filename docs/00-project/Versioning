@@ -1,0 +1,268 @@
+==========================================================
+PASAR PINTAR ERP
+==========================================================
+
+Document ID     : DOC-PROJ-009
+Title           : Versioning
+Version         : 0.1.0
+Status          : Final
+Author          : [F][N][R]
+Last Update     : 2026-07-30
+Module          : Project
+Category        : Documentation
+Priority        : Critical
+Related Docs    : Scope.md, Roadmap.md
+
+==========================================================
+
+# Versioning
+
+## Overview
+
+Dokumen ini menjelaskan standar versioning
+yang digunakan dalam pengembangan
+Pasar Pintar ERP.
+
+==========================================================
+
+# Version Format
+
+MAJOR.MINOR.PATCH
+
+Contoh
+
+1.0.0
+
+1.0.1
+
+1.1.0
+
+2.0.0
+
+==========================================================
+
+# Major Version
+
+Perubahan besar.
+
+Contoh
+
+- Database berubah besar
+- Arsitektur berubah
+- Breaking Change
+- Modul besar baru
+
+==========================================================
+
+# Minor Version
+
+Penambahan fitur.
+
+Contoh
+
+- Modul baru
+- Endpoint baru
+- Dashboard baru
+- Integrasi baru
+
+==========================================================
+
+# Patch Version
+
+Perbaikan.
+
+Contoh
+
+Bug Fix
+
+Hot Fix
+
+Performance Improvement
+
+Security Fix
+
+==========================================================
+
+# Development Phase
+
+v0.1.0
+
+Blueprint
+
+------------------------------------
+
+v0.2.0
+
+Documentation
+
+------------------------------------
+
+v0.3.0
+
+Business Rules
+
+------------------------------------
+
+v0.4.0
+
+Database Design
+
+------------------------------------
+
+v0.5.0
+
+API Design
+
+------------------------------------
+
+v0.6.0
+
+Backend
+
+------------------------------------
+
+v0.7.0
+
+Frontend
+
+------------------------------------
+
+v0.8.0
+
+Testing
+
+------------------------------------
+
+v0.9.0
+
+Release Candidate
+
+------------------------------------
+
+v1.0.0
+
+Production
+
+==========================================================
+
+# Branch Strategy
+
+main
+
+Production
+
+------------------------------------
+
+develop
+
+Development
+
+------------------------------------
+
+feature/*
+
+New Feature
+
+------------------------------------
+
+bugfix/*
+
+Bug
+
+------------------------------------
+
+hotfix/*
+
+Emergency
+
+==========================================================
+
+# Release Rule
+
+Tidak boleh release apabila
+
+Database belum final
+
+API belum final
+
+Dokumentasi belum final
+
+Testing belum selesai
+
+==========================================================
+
+# Breaking Change
+
+Breaking Change wajib
+
+Naik Major Version
+
+Update Dokumentasi
+
+Update Migration
+
+Update API
+
+==========================================================
+
+# Database Version
+
+Setiap perubahan schema
+
+wajib memiliki
+
+Migration
+
+Documentation
+
+Rollback Plan
+
+==========================================================
+
+# API Version
+
+Seluruh endpoint menggunakan
+
+/api/v1/
+
+Jika breaking change
+
+/api/v2/
+
+==========================================================
+
+# Changelog
+
+Setiap release wajib memiliki
+
+Added
+
+Changed
+
+Fixed
+
+Removed
+
+Deprecated
+
+==========================================================
+
+# Success Criteria
+
+Seluruh perubahan
+mudah ditelusuri.
+
+Seluruh release
+memiliki dokumentasi.
+
+==========================================================
+
+Document Control
+
+Status          : Final
+
+Next Document   : Business Rules
+
+Approved By     : [F][N][R]
+
+==========================================================
