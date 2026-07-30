@@ -1,0 +1,195 @@
+==========================================================
+PASAR PINTAR ERP
+==========================================================
+
+Document ID     : DOC-DB-006
+Title           : Prisma Architecture
+Version         : 1.0.0
+Status          : Final
+Author          : [F][N][R]
+Last Update     : 2026-07-30
+Module          : Database
+Category        : Documentation
+Priority        : Critical
+
+==========================================================
+
+# Prisma Architecture
+
+## Overview
+
+Dokumen ini menjelaskan
+arsitektur Prisma ORM
+yang digunakan
+oleh Pasar Pintar ERP.
+
+==========================================================
+
+# ORM
+
+ORM
+
+Prisma ORM
+
+==========================================================
+
+# Database
+
+PostgreSQL
+
+==========================================================
+
+# Datasource
+
+Single Datasource
+
+PostgreSQL
+
+==========================================================
+
+# Generator
+
+Prisma Client
+
+==========================================================
+
+# UUID
+
+Seluruh Primary Key
+
+menggunakan UUID.
+
+==========================================================
+
+# Naming
+
+Model
+
+PascalCase
+
+Field
+
+camelCase
+
+Enum
+
+PascalCase
+
+==========================================================
+
+# Relation
+
+Gunakan
+Explicit Relation.
+
+==========================================================
+
+# Many To Many
+
+Gunakan
+Bridge Table.
+
+==========================================================
+
+# Header Detail
+
+Gunakan
+Header
+
+↓
+
+Detail
+
+==========================================================
+
+# Audit Field
+
+createdAt
+
+updatedAt
+
+createdBy
+
+updatedBy
+
+==========================================================
+
+# Soft Delete
+
+deletedAt
+
+deletedBy
+
+isDeleted
+
+==========================================================
+
+# Status
+
+Gunakan Enum.
+
+==========================================================
+
+# Index
+
+Gunakan
+
+@@index
+
+@@unique
+
+==========================================================
+
+# Composite Index
+
+Gunakan
+@@index
+
+untuk query utama.
+
+==========================================================
+
+# Event
+
+Database
+menghasilkan Event.
+
+==========================================================
+
+# Migration
+
+Seluruh perubahan
+melalui Prisma Migration.
+
+==========================================================
+
+# Seed
+
+Gunakan Prisma Seed.
+
+==========================================================
+
+# AI
+
+AI membaca
+melalui Service Layer.
+
+==========================================================
+
+# Success Criteria
+
+Seluruh model
+konsisten
+dan mudah dikembangkan.
+
+==========================================================
+
+Document Control
+
+Status          : Final
+
+Next Document   : schema.prisma
+
+Approved By     : [F][N][R]
+
+==========================================================
