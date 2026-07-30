@@ -1,0 +1,281 @@
+==========================================================
+PASAR PINTAR ERP
+==========================================================
+
+Document ID     : DOC-BIZ-008
+Title           : Pricing Rules
+Version         : 0.1.0
+Status          : Final
+Author          : [F][N][R]
+Last Update     : 2026-07-30
+Module          : Business
+Category        : Documentation
+Priority        : Critical
+Related Docs    : StockRules.md
+                  BusinessRules.md
+
+==========================================================
+
+# Pricing Rules
+
+## Overview
+
+Dokumen ini mengatur seluruh aturan harga
+di Pasar Pintar ERP.
+
+Harga tidak disimpan sebagai satu nilai tetap.
+
+Harga ditentukan berdasarkan
+Price Engine.
+
+==========================================================
+
+# Golden Rule
+
+Satu Product
+
+boleh memiliki
+
+banyak harga.
+
+==========================================================
+
+# Purchase Price
+
+Harga pembelian
+
+ditentukan berdasarkan:
+
+Vendor
+
+Tanggal
+
+Minimum Quantity
+
+Promotion Vendor
+
+==========================================================
+
+# Sales Price
+
+Harga jual
+
+ditentukan berdasarkan:
+
+Price List
+
+Customer Group
+
+Promotion
+
+Branch
+
+Company
+
+==========================================================
+
+# Price List
+
+Satu Company
+
+boleh memiliki
+
+banyak Price List.
+
+==========================================================
+
+# Customer Group
+
+Retail
+
+Wholesale
+
+Reseller
+
+Distributor
+
+Member
+
+VIP
+
+==========================================================
+
+# Multi Price
+
+Satu Product
+
+boleh memiliki
+
+banyak harga jual.
+
+==========================================================
+
+# Promotion
+
+Promotion dapat berupa:
+
+Nominal
+
+Persentase
+
+Bundle
+
+Buy X Get Y
+
+Special Price
+
+==========================================================
+
+# Price Priority
+
+Promotion
+
+↓
+
+Customer Contract
+
+↓
+
+Customer Group
+
+↓
+
+Price List
+
+↓
+
+Default Price
+
+==========================================================
+
+# Effective Date
+
+Harga memiliki
+
+Start Date
+
+End Date
+
+==========================================================
+
+# Quantity Price
+
+Semakin banyak membeli
+
+harga dapat berubah.
+
+==========================================================
+
+# Vendor Price
+
+Vendor A
+
+dapat memiliki harga berbeda
+
+dengan Vendor B.
+
+==========================================================
+
+# Currency
+
+Default
+
+IDR
+
+Mendukung Multi Currency.
+
+==========================================================
+
+# Manual Price
+
+Manual Price
+
+dapat diizinkan
+
+berdasarkan Permission.
+
+==========================================================
+
+# Discount
+
+Discount
+
+dapat berasal dari:
+
+Promotion
+
+Customer
+
+Manual
+
+Voucher
+
+==========================================================
+
+# Tax
+
+Harga dapat berupa:
+
+Include Tax
+
+Exclude Tax
+
+==========================================================
+
+# Price History
+
+Seluruh perubahan harga
+
+wajib disimpan.
+
+==========================================================
+
+# Cost Price
+
+Harga pokok
+
+tidak boleh diedit langsung.
+
+Harga pokok mengikuti
+
+Costing Engine.
+
+==========================================================
+
+# AI
+
+AI dapat memberikan:
+
+Saran Harga
+
+Analisis Margin
+
+Analisis Kompetitor
+
+Prediksi Harga
+
+AI tidak boleh
+
+mengubah harga otomatis.
+
+==========================================================
+
+# Success Criteria
+
+Semua harga berasal
+
+dari Price Engine.
+
+Tidak ada hardcode.
+
+==========================================================
+
+Document Control
+
+Status          : Final
+
+Next Document   : TaxRules.md
+
+Approved By     : [F][N][R]
+
+==========================================================
