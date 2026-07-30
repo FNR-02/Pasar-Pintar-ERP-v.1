@@ -1,0 +1,365 @@
+==========================================================
+PASAR PINTAR ERP
+==========================================================
+
+Document ID     : DOC-BIZ-005
+Title           : Approval Flow
+Version         : 0.1.0
+Status          : Final
+Author          : [F][N][R]
+Last Update     : 2026-07-30
+Module          : Business
+Category        : Documentation
+Priority        : Critical
+Related Docs    : WorkflowOverview.md
+                  BusinessRules.md
+
+==========================================================
+
+# Approval Flow
+
+## Overview
+
+Approval Flow mengatur bagaimana
+sebuah dokumen memperoleh persetujuan
+sebelum dapat diproses lebih lanjut.
+
+Approval tidak boleh di-hardcode.
+
+Approval berasal dari
+Approval Engine.
+
+==========================================================
+
+# Approval Principle
+
+Approval berdasarkan:
+
+Role
+
+Jabatan
+
+Departemen
+
+Nominal
+
+Cabang
+
+Company
+
+Warehouse
+
+Jenis Dokumen
+
+==========================================================
+
+# Standard Approval
+
+Draft
+
+↓
+
+Submitted
+
+↓
+
+Waiting Approval
+
+↓
+
+Approved
+
+↓
+
+Processing
+
+==========================================================
+
+# Rejected Flow
+
+Submitted
+
+↓
+
+Rejected
+
+↓
+
+Revision
+
+↓
+
+Submitted
+
+==========================================================
+
+# Cancel Flow
+
+Draft
+
+↓
+
+Cancelled
+
+==========================================================
+
+# Approval Level
+
+Level 1
+
+Supervisor
+
+↓
+
+Level 2
+
+Manager
+
+↓
+
+Level 3
+
+General Manager
+
+↓
+
+Level 4
+
+Director
+
+==========================================================
+
+# Single Approval
+
+Satu approver.
+
+Jika Approved
+
+↓
+
+Lanjut
+
+==========================================================
+
+# Multi Approval
+
+Supervisor
+
+↓
+
+Manager
+
+↓
+
+Director
+
+↓
+
+Completed
+
+==========================================================
+
+# Parallel Approval
+
+Manager Finance
+
+↓
+
+Manager Warehouse
+
+↓
+
+Manager Purchasing
+
+↓
+
+Semua Approved
+
+↓
+
+Completed
+
+==========================================================
+
+# Conditional Approval
+
+Jika nominal
+
+≤ Rp5.000.000
+
+↓
+
+Supervisor
+
+----------------------------------------------------------
+
+Jika nominal
+
+> Rp5.000.000
+
+↓
+
+Manager
+
+----------------------------------------------------------
+
+Jika nominal
+
+> Rp50.000.000
+
+↓
+
+Director
+
+==========================================================
+
+# Auto Approval
+
+Dokumen dapat disetujui otomatis
+berdasarkan aturan.
+
+Contoh
+
+Nominal kecil
+
+Stock internal
+
+Transfer antar lokasi tertentu
+
+==========================================================
+
+# Delegation
+
+Approver dapat mendelegasikan
+approval kepada user lain.
+
+Delegasi memiliki:
+
+Tanggal Mulai
+
+Tanggal Berakhir
+
+Alasan
+
+==========================================================
+
+# Escalation
+
+Jika approval belum dilakukan
+dalam batas waktu tertentu.
+
+↓
+
+Reminder
+
+↓
+
+Escalation
+
+↓
+
+Approver berikutnya
+
+==========================================================
+
+# Approval Decision
+
+Approved
+
+Rejected
+
+Revision Required
+
+Cancelled
+
+Expired
+
+==========================================================
+
+# Approval Log
+
+Seluruh approval wajib mencatat:
+
+Document
+
+Approver
+
+Decision
+
+Date Time
+
+Comment
+
+IP Address
+
+Device
+
+==========================================================
+
+# Approval Notification
+
+Approval menghasilkan:
+
+In App Notification
+
+Email
+
+WhatsApp
+
+Webhook
+
+==========================================================
+
+# AI Recommendation
+
+AI dapat memberikan:
+
+Rekomendasi Approve
+
+Rekomendasi Reject
+
+Analisis Risiko
+
+Namun keputusan akhir
+tetap dilakukan sesuai
+aturan bisnis dan hak akses.
+
+==========================================================
+
+# Business Rules
+
+Approval tidak boleh dilewati.
+
+Approval tidak boleh diubah
+setelah dokumen selesai.
+
+Approval wajib masuk Audit Log.
+
+Approval wajib masuk Activity Log.
+
+==========================================================
+
+# Success Criteria
+
+Approval dapat dikonfigurasi.
+
+Approval mendukung
+single,
+multi,
+parallel,
+conditional,
+dan delegation.
+
+Approval dapat diaudit.
+
+==========================================================
+
+Document Control
+
+Status          : Final
+
+Next Document   : DocumentNumbering.md
+
+Approved By     : [F][N][R]
+
+==========================================================
