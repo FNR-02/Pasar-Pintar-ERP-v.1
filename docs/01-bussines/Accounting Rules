@@ -1,0 +1,293 @@
+==========================================================
+PASAR PINTAR ERP
+==========================================================
+
+Document ID     : DOC-BIZ-010
+Title           : Accounting Rules
+Version         : 0.1.0
+Status          : Final
+Author          : [F][N][R]
+Last Update     : 2026-07-30
+Module          : Business
+Category        : Documentation
+Priority        : Critical
+Related Docs    : TaxRules.md
+                  StockRules.md
+                  WorkflowOverview.md
+
+==========================================================
+
+# Accounting Rules
+
+## Overview
+
+Dokumen ini mengatur seluruh aturan
+akuntansi yang digunakan
+oleh Pasar Pintar ERP.
+
+Seluruh jurnal dibuat
+oleh Accounting Engine.
+
+==========================================================
+
+# Golden Rule
+
+Tidak ada modul
+yang membuat Journal secara langsung.
+
+Semua jurnal dibuat
+oleh Accounting Engine.
+
+==========================================================
+
+# Journal Source
+
+Journal dapat berasal dari:
+
+Purchase
+
+Sales
+
+Inventory
+
+POS
+
+Expense
+
+Income
+
+Asset
+
+Payroll (Future)
+
+Production (Future)
+
+==========================================================
+
+# Posting Rule
+
+Draft
+
+↓
+
+Review
+
+↓
+
+Posted
+
+↓
+
+Closed
+
+==========================================================
+
+# Unposted Transaction
+
+Transaksi
+
+yang belum Posted
+
+tidak masuk
+
+General Ledger.
+
+==========================================================
+
+# Posted Transaction
+
+Transaksi Posted
+
+tidak boleh diubah.
+
+==========================================================
+
+# Reverse Journal
+
+Jika transaksi dibatalkan
+
+maka dibuat
+
+Reverse Journal.
+
+==========================================================
+
+# Delete Rule
+
+Journal
+
+tidak boleh dihapus.
+
+==========================================================
+
+# Double Entry
+
+Semua jurnal
+
+menggunakan
+
+Double Entry.
+
+Debit
+
+=
+
+Credit
+
+==========================================================
+
+# Chart Of Account
+
+Semua akun
+
+berasal dari
+
+Chart Of Account.
+
+==========================================================
+
+# Multi Company
+
+Setiap Company
+
+memiliki
+
+Chart Of Account sendiri.
+
+==========================================================
+
+# Currency
+
+Engine mendukung
+
+Multi Currency.
+
+==========================================================
+
+# Exchange Rate
+
+Kurs disimpan
+
+berdasarkan
+
+Transaction Date.
+
+==========================================================
+
+# Accounts Receivable
+
+Sales Invoice
+
+membentuk
+
+Accounts Receivable.
+
+==========================================================
+
+# Accounts Payable
+
+Purchase Invoice
+
+membentuk
+
+Accounts Payable.
+
+==========================================================
+
+# Payment
+
+Payment
+
+mengurangi
+
+AR
+
+atau
+
+AP.
+
+==========================================================
+
+# Inventory Value
+
+Nilai inventory
+
+berasal dari
+
+Costing Engine.
+
+==========================================================
+
+# Tax
+
+Pajak
+
+berasal dari
+
+Tax Engine.
+
+==========================================================
+
+# Journal Number
+
+Nomor Journal
+
+dibuat oleh
+
+Numbering Engine.
+
+==========================================================
+
+# Audit
+
+Semua Journal
+
+masuk
+
+Audit Log.
+
+==========================================================
+
+# AI
+
+AI dapat memberikan
+
+Analisis Laba
+
+Analisis Cash Flow
+
+Analisis Rasio
+
+Prediksi Keuangan
+
+AI tidak boleh
+
+memposting Journal.
+
+==========================================================
+
+# Success Criteria
+
+Seluruh jurnal
+
+dibuat otomatis
+
+oleh Accounting Engine.
+
+Tidak ada jurnal
+
+yang dibuat manual
+
+oleh modul lain.
+
+==========================================================
+
+Document Control
+
+Status          : Final
+
+Next Document   : PermissionMatrix.md
+
+Approved By     : [F][N][R]
+
+==========================================================
