@@ -1,0 +1,363 @@
+==========================================================
+PASAR PINTAR ERP
+==========================================================
+
+Document ID     : DOC-DB-002
+Title           : Database Naming Convention
+Version         : 0.1.0
+Status          : Final
+Author          : [F][N][R]
+Last Update     : 2026-07-30
+Module          : Database
+Category        : Documentation
+Priority        : Critical
+Related Docs    : DatabaseArchitecture.md
+
+==========================================================
+
+# Database Naming Convention
+
+## Overview
+
+Dokumen ini mendefinisikan
+standar penamaan
+seluruh objek database
+Pasar Pintar ERP.
+
+==========================================================
+
+# General Rule
+
+Gunakan Bahasa Inggris.
+
+Gunakan nama yang jelas.
+
+Hindari singkatan
+yang tidak umum.
+
+==========================================================
+
+# Table Name
+
+Gunakan
+
+PascalCase
+
+Contoh
+
+Product
+
+PurchaseOrder
+
+SalesInvoice
+
+GoodsReceipt
+
+==========================================================
+
+# Field Name
+
+Gunakan
+
+camelCase
+
+Contoh
+
+productName
+
+createdAt
+
+updatedAt
+
+purchaseDate
+
+==========================================================
+
+# Boolean Field
+
+Gunakan awalan
+
+is
+
+has
+
+can
+
+allow
+
+Contoh
+
+isActive
+
+isDeleted
+
+hasSerialNumber
+
+canApprove
+
+==========================================================
+
+# Date Field
+
+Gunakan akhiran
+
+Date
+
+At
+
+Contoh
+
+postingDate
+
+transactionDate
+
+expiredDate
+
+createdAt
+
+updatedAt
+
+==========================================================
+
+# Quantity Field
+
+quantity
+
+reservedQuantity
+
+availableQuantity
+
+minimumQuantity
+
+maximumQuantity
+
+==========================================================
+
+# Amount Field
+
+subtotal
+
+discountAmount
+
+taxAmount
+
+totalAmount
+
+paidAmount
+
+remainingAmount
+
+==========================================================
+
+# Percentage Field
+
+discountPercent
+
+taxPercent
+
+==========================================================
+
+# Price Field
+
+purchasePrice
+
+salesPrice
+
+averageCost
+
+standardCost
+
+==========================================================
+
+# Foreign Key
+
+Gunakan
+
+EntityName + Id
+
+Contoh
+
+productId
+
+vendorId
+
+customerId
+
+warehouseId
+
+==========================================================
+
+# Many To Many
+
+Gunakan nama gabungan.
+
+Contoh
+
+UserRole
+
+RolePermission
+
+ProductCategory
+
+==========================================================
+
+# Enum
+
+Gunakan
+
+PascalCase
+
+Contoh
+
+DocumentStatus
+
+PaymentStatus
+
+StockMovementType
+
+==========================================================
+
+# Enum Value
+
+Gunakan
+
+UPPER_CASE
+
+Contoh
+
+DRAFT
+
+APPROVED
+
+POSTED
+
+CANCELLED
+
+==========================================================
+
+# Index
+
+Gunakan format
+
+idx_table_field
+
+Contoh
+
+idx_product_code
+
+idx_salesOrder_number
+
+==========================================================
+
+# Unique Index
+
+Gunakan format
+
+uk_table_field
+
+Contoh
+
+uk_product_code
+
+==========================================================
+
+# Foreign Key Constraint
+
+Gunakan format
+
+fk_child_parent
+
+Contoh
+
+fk_salesOrder_customer
+
+==========================================================
+
+# Check Constraint
+
+Gunakan format
+
+chk_table_name
+
+==========================================================
+
+# Default Value
+
+Gunakan default
+yang jelas
+dan konsisten.
+
+==========================================================
+
+# File Name
+
+Gunakan
+
+kebab-case
+
+Contoh
+
+product.service.ts
+
+purchase-order.service.ts
+
+stock-movement.service.ts
+
+==========================================================
+
+# API Endpoint
+
+Gunakan
+
+kebab-case
+
+Contoh
+
+/api/products
+
+/api/purchase-orders
+
+/api/stock-movements
+
+==========================================================
+
+# Prisma Model
+
+Gunakan
+
+PascalCase
+
+==========================================================
+
+# Prisma Field
+
+Gunakan
+
+camelCase
+
+==========================================================
+
+# Prisma Relation
+
+Gunakan nama entity
+yang jelas.
+
+==========================================================
+
+# Success Criteria
+
+Seluruh nama
+konsisten
+di seluruh proyek.
+
+==========================================================
+
+Document Control
+
+Status          : Final
+
+Next Document   : DatabaseRelationship.md
+
+Approved By     : [F][N][R]
+
+==========================================================
