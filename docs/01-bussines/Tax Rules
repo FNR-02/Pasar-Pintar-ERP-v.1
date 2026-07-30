@@ -1,0 +1,253 @@
+==========================================================
+PASAR PINTAR ERP
+==========================================================
+
+Document ID     : DOC-BIZ-009
+Title           : Tax Rules
+Version         : 0.1.0
+Status          : Final
+Author          : [F][N][R]
+Last Update     : 2026-07-30
+Module          : Business
+Category        : Documentation
+Priority        : Critical
+Related Docs    : PricingRules.md
+                  AccountingRules.md
+
+==========================================================
+
+# Tax Rules
+
+## Overview
+
+Dokumen ini mengatur seluruh aturan perpajakan
+yang digunakan dalam Pasar Pintar ERP.
+
+Seluruh transaksi yang berkaitan dengan pajak
+harus mengikuti aturan ini.
+
+==========================================================
+
+# Golden Rule
+
+Pajak dihitung oleh
+
+Tax Engine
+
+Bukan oleh modul transaksi.
+
+==========================================================
+
+# Tax Object
+
+Pajak dapat dikenakan pada
+
+Product
+
+Service
+
+Shipping
+
+Additional Charge
+
+==========================================================
+
+# Tax Type
+
+PPN
+
+PPH
+
+Tax Exempt
+
+Custom Tax
+
+==========================================================
+
+# Tax Method
+
+Include Tax
+
+Exclude Tax
+
+==========================================================
+
+# Tax Rate
+
+Setiap jenis pajak
+
+memiliki
+
+Effective Date
+
+Start Date
+
+End Date
+
+==========================================================
+
+# Purchase Tax
+
+Purchase Order
+
+tidak membuat jurnal pajak.
+
+Goods Receipt
+
+tidak membuat jurnal pajak.
+
+Purchase Invoice
+
+yang menghitung pajak.
+
+==========================================================
+
+# Sales Tax
+
+Sales Order
+
+tidak menghitung pajak.
+
+Delivery Order
+
+tidak menghitung pajak.
+
+Sales Invoice
+
+yang menghitung pajak.
+
+==========================================================
+
+# Tax Rounding
+
+Pembulatan pajak
+
+mengikuti konfigurasi perusahaan.
+
+==========================================================
+
+# Tax Calculation
+
+Tax dihitung berdasarkan
+
+Tax Engine.
+
+==========================================================
+
+# Multi Tax
+
+Satu transaksi
+
+dapat memiliki
+
+lebih dari satu pajak.
+
+==========================================================
+
+# Tax Exemption
+
+Customer
+
+atau Product
+
+dapat dibebaskan dari pajak
+
+sesuai aturan.
+
+==========================================================
+
+# Tax History
+
+Seluruh perubahan tarif pajak
+
+harus disimpan.
+
+==========================================================
+
+# Tax Audit
+
+Seluruh perhitungan pajak
+
+harus dapat ditelusuri.
+
+==========================================================
+
+# Credit Note
+
+Mengurangi nilai pajak.
+
+==========================================================
+
+# Debit Note
+
+Menambah atau mengoreksi nilai pajak
+
+sesuai aturan.
+
+==========================================================
+
+# Return
+
+Sales Return
+
+menghasilkan pembalikan pajak.
+
+Purchase Return
+
+menghasilkan pembalikan pajak.
+
+==========================================================
+
+# Multi Company
+
+Setiap Company
+
+dapat memiliki
+
+aturan pajak sendiri.
+
+==========================================================
+
+# Multi Country
+
+Engine mendukung
+
+aturan pajak
+
+berbeda tiap negara.
+
+==========================================================
+
+# AI
+
+AI dapat memberikan:
+
+Analisis Pajak
+
+Estimasi Pajak
+
+Peringatan Pajak
+
+AI tidak boleh
+
+mengubah tarif pajak.
+
+==========================================================
+
+# Success Criteria
+
+Seluruh pajak dihitung
+
+oleh Tax Engine.
+
+==========================================================
+
+Document Control
+
+Status          : Final
+
+Next Document   : AccountingRules.md
+
+Approved By     : [F][N][R]
+
+==========================================================
