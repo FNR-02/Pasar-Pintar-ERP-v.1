@@ -1,0 +1,373 @@
+==========================================================
+PASAR PINTAR ERP
+==========================================================
+
+Document ID     : DOC-BIZ-003
+Title           : Business Terminology
+Version         : 0.1.0
+Status          : Final
+Author          : [F][N][R]
+Last Update     : 2026-07-30
+Module          : Business
+Category        : Documentation
+Priority        : Critical
+Related Docs    : BusinessRules.md, BusinessProcess.md
+
+==========================================================
+
+# Business Terminology
+
+## Overview
+
+Dokumen ini berisi definisi istilah resmi
+yang digunakan di seluruh Pasar Pintar ERP.
+
+Seluruh dokumentasi, database,
+API, frontend, AI, dan manual pengguna
+harus menggunakan istilah yang sama.
+
+==========================================================
+
+# Purchasing
+
+Purchase Request (PR)
+
+Permintaan pembelian barang yang dibuat
+oleh pengguna atau departemen.
+
+----------------------------------------------------------
+
+Request For Quotation (RFQ)
+
+Permintaan penawaran harga
+kepada satu atau lebih vendor.
+
+----------------------------------------------------------
+
+Vendor Quotation
+
+Penawaran harga resmi
+yang diberikan vendor.
+
+----------------------------------------------------------
+
+Purchase Order (PO)
+
+Dokumen resmi pemesanan barang
+kepada vendor.
+
+----------------------------------------------------------
+
+Goods Receipt (GR)
+
+Dokumen penerimaan barang
+ke gudang.
+
+Goods Receipt adalah dokumen
+yang menambah stok.
+
+----------------------------------------------------------
+
+Purchase Invoice
+
+Tagihan dari vendor
+atas barang yang diterima.
+
+----------------------------------------------------------
+
+Purchase Payment
+
+Pembayaran kepada vendor.
+
+==========================================================
+
+# Inventory
+
+Stock
+
+Jumlah barang yang tersedia
+di warehouse.
+
+----------------------------------------------------------
+
+Available Stock
+
+Stok yang dapat dijual.
+
+----------------------------------------------------------
+
+Reserved Stock
+
+Stok yang sudah dialokasikan
+untuk transaksi tertentu.
+
+----------------------------------------------------------
+
+Stock Movement
+
+Catatan seluruh perubahan stok.
+
+----------------------------------------------------------
+
+Stock Adjustment
+
+Penyesuaian stok
+karena selisih fisik,
+kerusakan,
+atau alasan lainnya.
+
+----------------------------------------------------------
+
+Stock Transfer
+
+Perpindahan stok
+antar warehouse.
+
+----------------------------------------------------------
+
+Stock Opname
+
+Proses menghitung
+stok fisik.
+
+----------------------------------------------------------
+
+Cycle Count
+
+Penghitungan stok
+sebagian tanpa
+menghentikan operasional.
+
+==========================================================
+
+# Warehouse
+
+Warehouse
+
+Gudang penyimpanan.
+
+----------------------------------------------------------
+
+Zone
+
+Area di dalam warehouse.
+
+----------------------------------------------------------
+
+Bin Location
+
+Lokasi penyimpanan
+terkecil di warehouse.
+
+----------------------------------------------------------
+
+Batch
+
+Kelompok produk
+dengan nomor produksi yang sama.
+
+----------------------------------------------------------
+
+Serial Number
+
+Nomor unik
+untuk satu unit barang.
+
+==========================================================
+
+# Sales
+
+Sales Quotation
+
+Penawaran harga
+kepada pelanggan.
+
+----------------------------------------------------------
+
+Sales Order
+
+Pesanan pelanggan.
+
+Sales Order
+tidak mengurangi stok.
+
+----------------------------------------------------------
+
+Picking
+
+Mengambil barang
+dari lokasi penyimpanan.
+
+----------------------------------------------------------
+
+Packing
+
+Mengemas barang
+sebelum dikirim.
+
+----------------------------------------------------------
+
+Delivery Order
+
+Dokumen pengiriman.
+
+Delivery Order
+mengurangi stok.
+
+----------------------------------------------------------
+
+Sales Invoice
+
+Tagihan kepada pelanggan.
+
+----------------------------------------------------------
+
+Sales Payment
+
+Pembayaran dari pelanggan.
+
+==========================================================
+
+# Finance
+
+Journal
+
+Pencatatan transaksi akuntansi.
+
+----------------------------------------------------------
+
+Posting
+
+Proses mengunci transaksi
+ke General Ledger.
+
+----------------------------------------------------------
+
+General Ledger
+
+Buku besar.
+
+----------------------------------------------------------
+
+Trial Balance
+
+Neraca saldo.
+
+==========================================================
+
+# CRM
+
+Customer Group
+
+Kelompok pelanggan.
+
+----------------------------------------------------------
+
+Membership
+
+Keanggotaan pelanggan.
+
+----------------------------------------------------------
+
+Voucher
+
+Potongan harga.
+
+----------------------------------------------------------
+
+Promotion
+
+Program promosi.
+
+==========================================================
+
+# Workflow
+
+Draft
+
+Dokumen masih dapat diubah.
+
+----------------------------------------------------------
+
+Submitted
+
+Dokumen dikirim
+untuk diproses.
+
+----------------------------------------------------------
+
+Approved
+
+Dokumen disetujui.
+
+----------------------------------------------------------
+
+Rejected
+
+Dokumen ditolak.
+
+----------------------------------------------------------
+
+Completed
+
+Seluruh proses selesai.
+
+----------------------------------------------------------
+
+Closed
+
+Dokumen ditutup.
+
+----------------------------------------------------------
+
+Cancelled
+
+Dokumen dibatalkan.
+
+----------------------------------------------------------
+
+Void
+
+Pembatalan transaksi
+dengan jejak audit tetap ada.
+
+==========================================================
+
+# AI
+
+Forecast
+
+Prediksi berdasarkan data historis.
+
+----------------------------------------------------------
+
+Recommendation
+
+Saran yang diberikan AI.
+
+----------------------------------------------------------
+
+Executive Summary
+
+Ringkasan otomatis
+untuk manajemen.
+
+==========================================================
+
+# Success Criteria
+
+Seluruh istilah digunakan
+secara konsisten
+di seluruh sistem.
+
+==========================================================
+
+Document Control
+
+Status          : Final
+
+Next Document   : WorkflowOverview.md
+
+Approved By     : [F][N][R]
+
+==========================================================
