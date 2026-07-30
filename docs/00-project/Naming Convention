@@ -1,0 +1,453 @@
+==========================================================
+PASAR PINTAR ERP
+==========================================================
+
+Document ID     : DOC-PROJ-008
+Title           : Naming Convention
+Version         : 0.1.0
+Status          : Final
+Author          : [F][N][R]
+Last Update     : 2026-07-30
+Module          : Project
+Category        : Documentation
+Priority        : Critical
+Related Docs    : DevelopmentPrinciple.md
+==========================================================
+
+# Naming Convention
+
+## Overview
+
+Dokumen ini mendefinisikan standar penamaan
+yang digunakan di seluruh Pasar Pintar ERP.
+
+Seluruh developer wajib mengikuti standar ini.
+
+==========================================================
+
+# General Rules
+
+Gunakan Bahasa Inggris.
+
+Gunakan nama yang jelas.
+
+Hindari singkatan yang tidak umum.
+
+Gunakan nama yang konsisten.
+
+==========================================================
+
+# Folder
+
+Gunakan
+
+lowercase
+
+Contoh
+
+auth
+
+product
+
+purchase
+
+inventory
+
+finance
+
+warehouse
+
+==========================================================
+
+# File
+
+Gunakan
+
+kebab-case
+
+Contoh
+
+create-product.dto.ts
+
+purchase-order.service.ts
+
+stock-adjustment.controller.ts
+
+==========================================================
+
+# Class
+
+Gunakan
+
+PascalCase
+
+Contoh
+
+ProductService
+
+PurchaseOrderController
+
+InventoryRepository
+
+==========================================================
+
+# Interface
+
+Gunakan
+
+PascalCase
+
+diawali huruf I
+
+Contoh
+
+IProductRepository
+
+IStockService
+
+==========================================================
+
+# Variable
+
+Gunakan
+
+camelCase
+
+Contoh
+
+productName
+
+purchaseOrder
+
+stockQuantity
+
+==========================================================
+
+# Constant
+
+Gunakan
+
+UPPER_SNAKE_CASE
+
+Contoh
+
+DEFAULT_LANGUAGE
+
+MAX_LOGIN_ATTEMPT
+
+DEFAULT_CURRENCY
+
+==========================================================
+
+# Enum
+
+Gunakan
+
+PascalCase
+
+Contoh
+
+OrderStatus
+
+PaymentStatus
+
+StockMovementType
+
+==========================================================
+
+# Function
+
+Gunakan
+
+camelCase
+
+Contoh
+
+createProduct()
+
+approvePurchaseOrder()
+
+calculateStock()
+
+==========================================================
+
+# Database
+
+Gunakan
+
+PascalCase
+
+untuk Model Prisma
+
+Contoh
+
+Product
+
+SalesOrder
+
+PurchaseOrder
+
+==========================================================
+
+# Database Field
+
+Gunakan
+
+camelCase
+
+Contoh
+
+createdAt
+
+updatedAt
+
+deletedAt
+
+companyId
+
+branchId
+
+warehouseId
+
+==========================================================
+
+# API Endpoint
+
+Gunakan
+
+kebab-case
+
+dan bentuk jamak
+
+Contoh
+
+/api/v1/products
+
+/api/v1/purchase-orders
+
+/api/v1/stock-adjustments
+
+==========================================================
+
+# DTO
+
+Gunakan pola berikut
+
+CreateProductDto
+
+UpdateProductDto
+
+FilterProductDto
+
+==========================================================
+
+# Service
+
+ProductService
+
+PurchaseOrderService
+
+InventoryService
+
+==========================================================
+
+# Repository
+
+ProductRepository
+
+InventoryRepository
+
+SalesRepository
+
+==========================================================
+
+# Controller
+
+ProductController
+
+PurchaseOrderController
+
+WarehouseController
+
+==========================================================
+
+# Table Alias
+
+Gunakan alias pendek yang konsisten
+
+Product          p
+
+Customer         c
+
+Vendor           v
+
+Warehouse        w
+
+SalesOrder       so
+
+PurchaseOrder    po
+
+Journal          j
+
+==========================================================
+
+# Prefix Document Number
+
+SO
+
+Sales Order
+
+PO
+
+Purchase Order
+
+PR
+
+Purchase Request
+
+GR
+
+Goods Receipt
+
+SI
+
+Sales Invoice
+
+PI
+
+Purchase Invoice
+
+SR
+
+Sales Return
+
+PRT
+
+Purchase Return
+
+JV
+
+Journal Voucher
+
+ST
+
+Stock Transfer
+
+SA
+
+Stock Adjustment
+
+==========================================================
+
+# Prefix Master
+
+PRD
+
+Product
+
+CUS
+
+Customer
+
+VEN
+
+Vendor
+
+WH
+
+Warehouse
+
+EMP
+
+Employee
+
+==========================================================
+
+# Boolean
+
+Gunakan awalan
+
+is
+
+has
+
+can
+
+Contoh
+
+isActive
+
+isDefault
+
+hasStock
+
+canApprove
+
+==========================================================
+
+# Date
+
+Gunakan akhiran
+
+Date
+
+At
+
+Contoh
+
+invoiceDate
+
+paymentDate
+
+createdAt
+
+updatedAt
+
+postedAt
+
+==========================================================
+
+# Soft Delete
+
+Seluruh master menggunakan
+
+deletedAt
+
+Tidak menggunakan
+
+isDeleted
+
+==========================================================
+
+# Audit
+
+Seluruh transaksi menggunakan
+
+createdBy
+
+updatedBy
+
+deletedBy
+
+==========================================================
+
+# Success Criteria
+
+Seluruh nama di backend,
+frontend,
+database,
+API,
+dan dokumentasi
+mengikuti standar ini.
+
+==========================================================
+
+Document Control
+
+Status          : Final
+
+Next Document   : Versioning.md
+
+Approved By     : [F][N][R]
+
+==========================================================
