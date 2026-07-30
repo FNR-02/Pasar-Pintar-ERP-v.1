@@ -1,0 +1,282 @@
+==========================================================
+PASAR PINTAR ERP
+==========================================================
+
+Document ID     : DOC-DOM-004
+Title           : Finance Domain
+Version         : 0.1.0
+Status          : Final
+Author          : [F][N][R]
+Last Update     : 2026-07-30
+Module          : Domain
+Category        : Documentation
+Priority        : Critical
+Related Docs    : AccountingRules.md
+                  TransactionDomain.md
+                  TaxRules.md
+
+==========================================================
+
+# Finance Domain
+
+## Overview
+
+Finance Domain bertanggung jawab
+atas seluruh pencatatan keuangan
+dan pelaporan keuangan perusahaan.
+
+Finance tidak mengubah transaksi bisnis.
+
+Finance menerima Event
+dari domain lain.
+
+==========================================================
+
+# Finance Modules
+
+Chart Of Account
+
+Journal
+
+General Ledger
+
+Accounts Receivable
+
+Accounts Payable
+
+Cash
+
+Bank
+
+Expense
+
+Income
+
+Asset
+
+Budget (Future)
+
+Payroll (Future)
+
+==========================================================
+
+# Event Source
+
+Purchasing
+
+↓
+
+Accounting Engine
+
+↓
+
+Journal
+
+----------------------------------------------------------
+
+Sales
+
+↓
+
+Accounting Engine
+
+↓
+
+Journal
+
+----------------------------------------------------------
+
+Inventory
+
+↓
+
+Accounting Engine
+
+↓
+
+Journal
+
+==========================================================
+
+# Chart Of Account
+
+Chart Of Account
+menjadi referensi
+seluruh jurnal.
+
+==========================================================
+
+# Journal
+
+Journal Header
+
+↓
+
+Journal Line
+
+==========================================================
+
+# General Ledger
+
+General Ledger
+dibentuk
+dari Journal Posted.
+
+==========================================================
+
+# Accounts Receivable
+
+Berasal dari
+
+Sales Invoice.
+
+==========================================================
+
+# Accounts Payable
+
+Berasal dari
+
+Purchase Invoice.
+
+==========================================================
+
+# Cash
+
+Cash In
+
+Cash Out
+
+Cash Transfer
+
+==========================================================
+
+# Bank
+
+Receive
+
+Payment
+
+Transfer
+
+Reconciliation
+
+==========================================================
+
+# Expense
+
+Expense Request
+
+↓
+
+Approval
+
+↓
+
+Expense
+
+↓
+
+Journal
+
+==========================================================
+
+# Income
+
+Other Income
+
+↓
+
+Journal
+
+==========================================================
+
+# Asset
+
+Asset Register
+
+↓
+
+Depreciation
+
+↓
+
+Journal
+
+==========================================================
+
+# Financial Report
+
+Trial Balance
+
+General Ledger
+
+Balance Sheet
+
+Profit And Loss
+
+Cash Flow
+
+==========================================================
+
+# Common Rule
+
+Semua transaksi
+keuangan memiliki:
+
+Document Number
+
+Workflow
+
+Approval
+
+Audit
+
+==========================================================
+
+# Multi Currency
+
+Didukung.
+
+==========================================================
+
+# Multi Company
+
+Didukung.
+
+==========================================================
+
+# AI
+
+AI dapat memberikan:
+
+Analisis Cash Flow
+
+Analisis Profit
+
+Analisis Expense
+
+Prediksi Pendapatan
+
+Prediksi Pengeluaran
+
+AI tidak boleh
+memposting jurnal.
+
+==========================================================
+
+# Success Criteria
+
+Seluruh transaksi keuangan
+berasal dari Accounting Engine.
+
+==========================================================
+
+Document Control
+
+Status          : Final
+
+Next Document   : SecurityDomain.md
+
+Approved By     : [F][N][R]
+
+==========================================================
