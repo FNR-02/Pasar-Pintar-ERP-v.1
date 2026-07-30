@@ -1,0 +1,375 @@
+==========================================================
+PASAR PINTAR ERP
+==========================================================
+
+Document ID     : DOC-DB-003
+Title           : Database Relationship
+Version         : 0.1.0
+Status          : Final
+Author          : [F][N][R]
+Last Update     : 2026-07-30
+Module          : Database
+Category        : Documentation
+Priority        : Critical
+Related Docs    : DatabaseArchitecture.md
+                  DatabaseNamingConvention.md
+                  TransactionDomain.md
+
+==========================================================
+
+# Database Relationship
+
+## Overview
+
+Dokumen ini menjelaskan
+hubungan antar entity
+di Pasar Pintar ERP.
+
+Seluruh relasi database
+harus mengikuti standar ini.
+
+==========================================================
+
+# Relationship Type
+
+One To One
+
+One To Many
+
+Many To One
+
+Many To Many
+
+==========================================================
+
+# Master To Transaction
+
+Master Data
+
+digunakan
+
+oleh Transaction.
+
+Master tidak bergantung
+kepada Transaction.
+
+==========================================================
+
+# Product
+
+Product
+
+↓
+
+PurchaseOrderItem
+
+↓
+
+GoodsReceiptItem
+
+↓
+
+SalesOrderItem
+
+↓
+
+SalesInvoiceItem
+
+↓
+
+StockMovement
+
+==========================================================
+
+# Vendor
+
+Vendor
+
+↓
+
+PurchaseOrder
+
+↓
+
+PurchaseInvoice
+
+==========================================================
+
+# Customer
+
+Customer
+
+↓
+
+SalesOrder
+
+↓
+
+SalesInvoice
+
+↓
+
+CustomerPayment
+
+==========================================================
+
+# Warehouse
+
+Warehouse
+
+↓
+
+StockMovement
+
+↓
+
+StockTransfer
+
+↓
+
+StockAdjustment
+
+↓
+
+StockOpname
+
+==========================================================
+
+# Purchase Flow
+
+PurchaseOrder
+
+↓
+
+PurchaseOrderItem
+
+↓
+
+GoodsReceipt
+
+↓
+
+GoodsReceiptItem
+
+↓
+
+PurchaseInvoice
+
+↓
+
+PurchaseInvoiceItem
+
+==========================================================
+
+# Sales Flow
+
+SalesOrder
+
+↓
+
+SalesOrderItem
+
+↓
+
+DeliveryOrder
+
+↓
+
+DeliveryOrderItem
+
+↓
+
+SalesInvoice
+
+↓
+
+SalesInvoiceItem
+
+==========================================================
+
+# Inventory Flow
+
+StockMovement
+
+↓
+
+StockBalance
+
+↓
+
+Inventory Report
+
+==========================================================
+
+# Finance Flow
+
+Journal
+
+↓
+
+JournalLine
+
+↓
+
+GeneralLedger
+
+==========================================================
+
+# Workflow
+
+Document
+
+↓
+
+Workflow
+
+↓
+
+Approval
+
+↓
+
+Audit
+
+==========================================================
+
+# User
+
+User
+
+↓
+
+UserRole
+
+↓
+
+Role
+
+↓
+
+RolePermission
+
+↓
+
+Permission
+
+==========================================================
+
+# Notification
+
+User
+
+↓
+
+Notification
+
+==========================================================
+
+# AI
+
+User
+
+↓
+
+AI Request
+
+↓
+
+AI Log
+
+==========================================================
+
+# Attachment
+
+Document
+
+↓
+
+Attachment
+
+==========================================================
+
+# Comment
+
+Document
+
+↓
+
+Comment
+
+==========================================================
+
+# Activity
+
+Document
+
+↓
+
+ActivityLog
+
+==========================================================
+
+# Audit
+
+Entity
+
+↓
+
+AuditLog
+
+==========================================================
+
+# Cascade Rule
+
+Master Data
+
+tidak boleh
+Cascade Delete.
+
+==========================================================
+
+# Delete Rule
+
+Gunakan
+
+Soft Delete
+
+untuk Master.
+
+==========================================================
+
+# Transaction Delete
+
+Transaction
+
+tidak boleh
+dihapus.
+
+==========================================================
+
+# Orphan Rule
+
+Tidak boleh ada
+data orphan.
+
+==========================================================
+
+# Success Criteria
+
+Seluruh relasi
+jelas,
+konsisten,
+dan dapat diimplementasikan
+di Prisma ORM.
+
+==========================================================
+
+Document Control
+
+Status          : Final
+
+Next Document   : IndexStrategy.md
+
+Approved By     : [F][N][R]
+
+==========================================================
