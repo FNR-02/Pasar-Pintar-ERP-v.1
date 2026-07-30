@@ -1,0 +1,342 @@
+==========================================================
+PASAR PINTAR ERP
+==========================================================
+
+Document ID     : DOC-BIZ-007
+Title           : Stock Rules
+Version         : 0.1.0
+Status          : Final
+Author          : [F][N][R]
+Last Update     : 2026-07-30
+Module          : Business
+Category        : Documentation
+Priority        : Critical
+Related Docs    : BusinessRules.md
+                  WorkflowOverview.md
+                  Inventory
+
+==========================================================
+
+# Stock Rules
+
+## Overview
+
+Dokumen ini menjelaskan seluruh aturan
+pengelolaan stok pada Pasar Pintar ERP.
+
+Semua modul wajib mengikuti aturan ini.
+
+==========================================================
+
+# Golden Rule
+
+Stock tidak pernah diubah langsung.
+
+Stock hanya berubah
+melalui Stock Movement.
+
+==========================================================
+
+# Source of Truth
+
+Stock berasal dari:
+
+Stock Movement
+
+Bukan dari Product.
+
+==========================================================
+
+# Stock Formula
+
+Current Stock
+
+=
+
+Opening Balance
+
++
+
+Stock In
+
+-
+
+Stock Out
+
++
+
+Adjustment
+
+==========================================================
+
+# Stock In
+
+Opening Balance
+
+Goods Receipt
+
+Transfer In
+
+Sales Return
+
+Production Finish (Future)
+
+Positive Adjustment
+
+==========================================================
+
+# Stock Out
+
+Delivery
+
+POS
+
+Transfer Out
+
+Damage
+
+Expired
+
+Negative Adjustment
+
+==========================================================
+
+# Reservation
+
+Sales Order
+
+boleh
+
+melakukan reservasi.
+
+Reservation
+
+tidak mengurangi stock fisik.
+
+==========================================================
+
+# Available Stock
+
+Available
+
+=
+
+Current
+
+-
+
+Reserved
+
+==========================================================
+
+# Negative Stock
+
+Default
+
+Tidak Diizinkan
+
+Dapat diaktifkan
+melalui konfigurasi.
+
+==========================================================
+
+# Warehouse
+
+Stock disimpan
+per Warehouse.
+
+==========================================================
+
+# Zone
+
+Stock dapat disimpan
+per Zone.
+
+==========================================================
+
+# Bin Location
+
+Stock dapat disimpan
+per Bin Location.
+
+==========================================================
+
+# Batch
+
+Produk dapat
+menggunakan Batch.
+
+==========================================================
+
+# Serial Number
+
+Produk dapat
+menggunakan Serial Number.
+
+==========================================================
+
+# Expired Date
+
+Batch dapat memiliki
+
+Expired Date.
+
+==========================================================
+
+# FIFO
+
+Default
+
+FIFO
+
+==========================================================
+
+# FEFO
+
+Produk dengan expired
+
+menggunakan FEFO.
+
+==========================================================
+
+# Average Cost
+
+Default
+
+Weighted Average Cost.
+
+==========================================================
+
+# Costing Method
+
+Engine mendukung:
+
+FIFO
+
+Average
+
+Standard Cost
+
+LIFO
+
+(Opsional)
+
+==========================================================
+
+# Stock Transfer
+
+Transfer Out
+
+↓
+
+In Transit
+
+↓
+
+Transfer In
+
+==========================================================
+
+# Stock Adjustment
+
+Harus memiliki
+
+Reason
+
+Approval
+
+Audit Log
+
+==========================================================
+
+# Stock Opname
+
+Menghasilkan
+
+Adjustment
+
+bila terdapat selisih.
+
+==========================================================
+
+# Damage
+
+Barang rusak
+
+mengurangi stock.
+
+==========================================================
+
+# Expired
+
+Barang expired
+
+mengurangi stock.
+
+==========================================================
+
+# Cancel Transaction
+
+Jika transaksi
+
+dibatalkan,
+
+stok dikembalikan
+
+melalui
+
+Reverse Stock Movement.
+
+==========================================================
+
+# Delete Transaction
+
+Transaksi stok
+
+tidak boleh dihapus.
+
+==========================================================
+
+# Audit
+
+Seluruh perubahan stok
+
+wajib menghasilkan
+
+Audit Log
+
+Activity Log
+
+==========================================================
+
+# AI
+
+AI boleh
+
+memberikan rekomendasi.
+
+AI tidak boleh
+
+mengubah stok.
+
+==========================================================
+
+# Success Criteria
+
+Semua perubahan stok
+berasal dari Stock Movement.
+
+Tidak ada perubahan stok
+secara langsung.
+
+==========================================================
+
+Document Control
+
+Status          : Final
+
+Next Document   : PricingRules.md
+
+Approved By     : [F][N][R]
+
+==========================================================
