@@ -1,0 +1,225 @@
+==========================================================
+PASAR PINTAR ERP
+==========================================================
+
+Document ID     : DOC-DB-004
+Title           : Index Strategy
+Version         : 0.1.0
+Status          : Final
+Author          : [F][N][R]
+Last Update     : 2026-07-30
+Module          : Database
+Category        : Documentation
+Priority        : Critical
+Related Docs    : DatabaseArchitecture.md
+                  DatabaseRelationship.md
+
+==========================================================
+
+# Index Strategy
+
+## Overview
+
+Dokumen ini mengatur
+strategi indexing
+pada seluruh tabel
+Pasar Pintar ERP.
+
+==========================================================
+
+# Principle
+
+Index dibuat
+untuk mempercepat
+query yang sering digunakan.
+
+==========================================================
+
+# Primary Key
+
+Seluruh tabel
+memiliki Primary Key.
+
+==========================================================
+
+# Foreign Key
+
+Seluruh Foreign Key
+
+harus memiliki Index.
+
+==========================================================
+
+# Unique Index
+
+Digunakan untuk:
+
+Code
+
+Number
+
+Barcode
+
+Email
+
+Username
+
+==========================================================
+
+# Composite Index
+
+Digunakan pada:
+
+Company + Code
+
+Branch + Number
+
+Warehouse + Product
+
+Product + Warehouse
+
+==========================================================
+
+# Search Index
+
+Kolom yang sering dicari:
+
+Code
+
+Name
+
+Number
+
+Barcode
+
+==========================================================
+
+# Reporting Index
+
+Kolom laporan:
+
+Transaction Date
+
+Posting Date
+
+Status
+
+Company
+
+Branch
+
+==========================================================
+
+# Audit Index
+
+Audit Log
+
+di-index berdasarkan:
+
+Entity
+
+EntityId
+
+User
+
+Date
+
+==========================================================
+
+# Workflow Index
+
+Workflow
+
+Status
+
+Approver
+
+==========================================================
+
+# AI Search
+
+Data yang digunakan AI
+
+harus mudah dicari.
+
+==========================================================
+
+# Full Text Search
+
+Digunakan pada:
+
+Product Name
+
+Description
+
+Comment
+
+Knowledge
+
+==========================================================
+
+# Pagination
+
+Gunakan Index
+
+pada kolom
+yang digunakan
+untuk sorting.
+
+==========================================================
+
+# Soft Delete
+
+Gunakan Index
+
+pada
+
+isDeleted
+
+==========================================================
+
+# Multi Tenant
+
+Gunakan Composite Index
+
+Tenant
+
+Company
+
+Branch
+
+==========================================================
+
+# Performance Rule
+
+Jangan membuat
+Index berlebihan.
+
+==========================================================
+
+# Monitoring
+
+Index Usage
+
+harus dimonitor
+secara berkala.
+
+==========================================================
+
+# Success Criteria
+
+Query utama
+tetap cepat
+pada volume data besar.
+
+==========================================================
+
+Document Control
+
+Status          : Final
+
+Next Document   : MigrationStrategy.md
+
+Approved By     : [F][N][R]
+
+==========================================================
