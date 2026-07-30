@@ -1,0 +1,346 @@
+==========================================================
+PASAR PINTAR ERP
+==========================================================
+
+Document ID     : DOC-BIZ-012
+Title           : Audit Rules
+Version         : 0.1.0
+Status          : Final
+Author          : [F][N][R]
+Last Update     : 2026-07-30
+Module          : Business
+Category        : Documentation
+Priority        : Critical
+Related Docs    : PermissionMatrix.md
+                  WorkflowOverview.md
+                  AccountingRules.md
+
+==========================================================
+
+# Audit Rules
+
+## Overview
+
+Audit Rules mengatur seluruh pencatatan
+aktivitas pengguna
+dan perubahan data
+di Pasar Pintar ERP.
+
+Seluruh aktivitas penting
+harus dapat ditelusuri.
+
+==========================================================
+
+# Golden Rule
+
+Tidak ada perubahan data
+tanpa Audit Log.
+
+==========================================================
+
+# Audit Object
+
+Audit berlaku untuk:
+
+Master Data
+
+Transaksi
+
+Workflow
+
+Approval
+
+Login
+
+Permission
+
+Setting
+
+API
+
+AI
+
+==========================================================
+
+# Audit Event
+
+Create
+
+Update
+
+Delete
+
+Soft Delete
+
+Restore
+
+Approve
+
+Reject
+
+Post
+
+Cancel
+
+Void
+
+Login
+
+Logout
+
+Import
+
+Export
+
+==========================================================
+
+# Audit Data
+
+Audit wajib menyimpan:
+
+Entity
+
+Entity ID
+
+Action
+
+Old Value
+
+New Value
+
+==========================================================
+
+# User Information
+
+Audit wajib menyimpan:
+
+User ID
+
+User Name
+
+Role
+
+==========================================================
+
+# Session Information
+
+Session ID
+
+IP Address
+
+Device
+
+Browser
+
+Operating System
+
+==========================================================
+
+# Date Time
+
+Audit menggunakan
+
+UTC
+
+dan ditampilkan
+sesuai timezone pengguna.
+
+==========================================================
+
+# Activity Log
+
+Activity Log
+berisi aktivitas pengguna.
+
+Contoh
+
+Login
+
+Membuka Menu
+
+Mencetak Invoice
+
+Export Excel
+
+==========================================================
+
+# Audit Log
+
+Audit Log
+berisi perubahan data.
+
+Contoh
+
+Harga berubah
+
+Stock berubah
+
+Status berubah
+
+==========================================================
+
+# Workflow Log
+
+Seluruh perubahan status
+disimpan.
+
+Draft
+
+↓
+
+Submitted
+
+↓
+
+Approved
+
+↓
+
+Completed
+
+==========================================================
+
+# Approval Log
+
+Menyimpan
+
+Approver
+
+Keputusan
+
+Komentar
+
+Tanggal
+
+==========================================================
+
+# Login Log
+
+Berisi
+
+Login
+
+Logout
+
+Failed Login
+
+Expired Session
+
+==========================================================
+
+# API Log
+
+API
+
+Request
+
+Response
+
+Response Time
+
+==========================================================
+
+# Error Log
+
+Seluruh Error
+
+disimpan.
+
+==========================================================
+
+# Security Log
+
+Percobaan Login
+
+Permission Denied
+
+Token Expired
+
+Suspicious Activity
+
+==========================================================
+
+# AI Log
+
+AI Prompt
+
+AI Recommendation
+
+AI Execution
+
+AI Result
+
+==========================================================
+
+# Retention
+
+Audit Log
+
+tidak boleh dihapus.
+
+Retention
+mengikuti
+kebijakan perusahaan.
+
+==========================================================
+
+# Archive
+
+Audit lama
+
+dapat dipindahkan
+ke Archive Storage.
+
+==========================================================
+
+# Search
+
+Audit harus dapat dicari
+berdasarkan:
+
+Tanggal
+
+User
+
+Entity
+
+Action
+
+Module
+
+==========================================================
+
+# Export
+
+Audit dapat diekspor
+berdasarkan permission.
+
+==========================================================
+
+# AI
+
+AI dapat menganalisis
+Audit Log.
+
+AI tidak boleh
+mengubah Audit Log.
+
+==========================================================
+
+# Success Criteria
+
+Seluruh aktivitas
+dan perubahan data
+dapat ditelusuri.
+
+==========================================================
+
+Document Control
+
+Status          : Final
+
+Next Document   : Domain Model
+
+Approved By     : [F][N][R]
+
+==========================================================
