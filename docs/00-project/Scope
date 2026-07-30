@@ -1,0 +1,307 @@
+==========================================================
+PASAR PINTAR ERP
+==========================================================
+
+Document ID     : DOC-PROJ-004
+Title           : Scope
+Version         : 0.1.0
+Status          : Final
+Author          : [F][N][R]
+Last Update     : 2026-07-30
+Module          : Project
+Category        : Documentation
+Priority        : Critical
+Related Docs    : README.md, Vision.md, Mission.md, Goals.md
+
+==========================================================
+
+# Scope
+
+## Overview
+
+Dokumen ini menjelaskan batas ruang lingkup (Scope) pengembangan
+Pasar Pintar ERP.
+
+Scope dibagi menjadi tiga bagian:
+
+- In Scope
+- Out of Scope
+- Future Scope
+
+Seluruh pengembangan wajib mengacu pada dokumen ini.
+
+----------------------------------------------------------
+
+# In Scope (Versi 1.0)
+
+Modul berikut termasuk dalam pengembangan versi pertama.
+
+## Core
+
+- Authentication
+- Authorization
+- User
+- Role
+- Permission
+- Tenant
+- Company
+- Branch
+
+----------------------------------------------------------
+
+## Master Data
+
+- Category
+- Brand
+- Unit
+- Product
+- Product Variant
+- Product Barcode
+- Product Image
+- Product Vendor
+- Vendor
+- Customer
+- Tax
+
+----------------------------------------------------------
+
+## Warehouse
+
+- Warehouse
+- Warehouse Zone
+- Bin Location
+- Product Batch
+- Serial Number
+- Stock
+- Stock Movement
+- Stock Transfer
+- Stock Reservation
+- Stock Adjustment
+- Stock Opname
+- Cycle Count
+
+----------------------------------------------------------
+
+## Purchasing
+
+- Purchase Request
+- Vendor Quotation
+- Purchase Order
+- Goods Receipt
+- Quality Inspection
+- Purchase Invoice
+- Purchase Payment
+- Purchase Return
+
+----------------------------------------------------------
+
+## Sales
+
+- Sales Quotation
+- Sales Order
+- Delivery Order
+- Picking
+- Packing
+- Sales Invoice
+- Sales Payment
+- Sales Return
+
+----------------------------------------------------------
+
+## POS
+
+- POS Session
+- POS Transaction
+- POS Payment
+- Shift
+- Cash Drawer
+
+----------------------------------------------------------
+
+## Finance
+
+- Chart Of Account
+- Journal
+- Cash Bank
+- Expense
+- Income
+- Accounts Receivable
+- Accounts Payable
+- Asset
+- Depreciation
+
+----------------------------------------------------------
+
+## CRM
+
+- Customer Group
+- Membership
+- Loyalty Point
+- Voucher
+- Promotion
+- Marketing Campaign
+- Customer Timeline
+- Customer Feedback
+
+----------------------------------------------------------
+
+## System
+
+- Setting
+- Workflow
+- Approval Matrix
+- Notification
+- Attachment
+- Audit Log
+- Activity Log
+- Import
+- Export
+- Scheduler
+- API Key
+- Webhook
+
+----------------------------------------------------------
+
+## AI
+
+- AI Chat
+- AI Agent
+- AI Forecast
+- AI Recommendation
+- OCR
+- Executive Summary
+
+----------------------------------------------------------
+
+## Integration
+
+- WhatsApp
+- Marketplace
+- Payment Gateway
+- Courier
+- Barcode
+- QR Code
+
+==========================================================
+
+# Out of Scope (Versi 1.0)
+
+Fitur berikut tidak termasuk pada versi pertama.
+
+- Manufacturing (MRP)
+- Production Planning
+- Quality Management Enterprise
+- Payroll
+- Attendance Device
+- Face Recognition
+- GPS Tracking
+- Fleet Management
+- Asset Maintenance
+- Procurement Tender
+- Document Management Enterprise
+- Business Intelligence Cube
+- Machine Learning Custom Training
+- IoT Integration
+- RFID Integration
+- Blockchain
+- Cryptocurrency Payment
+
+==========================================================
+
+# Future Scope
+
+Fitur berikut direncanakan untuk versi berikutnya.
+
+## Version 1.1
+
+- Multi Language
+- Theme Management
+- Customer Portal
+- Vendor Portal
+
+----------------------------------------------------------
+
+## Version 1.2
+
+- HRM
+- Payroll
+- Recruitment
+- Training
+
+----------------------------------------------------------
+
+## Version 2.0
+
+- Manufacturing
+- Production
+- BOM
+- Work Order
+- Machine Maintenance
+
+----------------------------------------------------------
+
+## Version 3.0
+
+- Business Intelligence
+- Data Warehouse
+- AI Copilot
+- Predictive Analytics
+- AI Automation Workflow
+
+==========================================================
+
+# Scope Management Rules
+
+Semua fitur baru wajib melalui proses berikut:
+
+Idea
+
+↓
+
+Analysis
+
+↓
+
+Documentation
+
+↓
+
+Approval
+
+↓
+
+Roadmap
+
+↓
+
+Implementation
+
+Tidak diperbolehkan menambahkan fitur langsung ke dalam sistem tanpa
+melalui dokumentasi dan persetujuan.
+
+==========================================================
+
+# Success Criteria
+
+Versi 1.0 dianggap selesai apabila seluruh fitur pada bagian
+"In Scope" telah:
+
+✓ Database selesai
+
+✓ API selesai
+
+✓ Frontend selesai
+
+✓ Testing selesai
+
+✓ Dokumentasi selesai
+
+==========================================================
+
+Document Control
+
+Status          : Final
+Next Document   : FeatureList.md
+Approved By     : [F][N][R]
+
+==========================================================
