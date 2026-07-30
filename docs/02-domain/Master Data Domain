@@ -1,0 +1,243 @@
+==========================================================
+PASAR PINTAR ERP
+==========================================================
+
+Document ID     : DOC-DOM-002
+Title           : Master Data Domain
+Version         : 0.1.0
+Status          : Final
+Author          : [F][N][R]
+Last Update     : 2026-07-30
+Module          : Domain
+Category        : Documentation
+Priority        : Critical
+Related Docs    : DomainOverview.md
+                  BusinessRules.md
+
+==========================================================
+
+# Master Data Domain
+
+## Overview
+
+Master Data adalah data utama
+yang digunakan oleh seluruh modul ERP.
+
+Master Data bersifat reusable
+dan menjadi referensi transaksi.
+
+==========================================================
+
+# Master Domain Structure
+
+Organization
+
+Business Partner
+
+Product
+
+Location
+
+Finance
+
+Configuration
+
+==========================================================
+
+# Organization
+
+Tenant
+
+Company
+
+Branch
+
+Department
+
+Employee
+
+Role
+
+User
+
+==========================================================
+
+# Business Partner
+
+Customer
+
+Customer Group
+
+Vendor
+
+Vendor Group
+
+Contact
+
+Address
+
+==========================================================
+
+# Product
+
+Category
+
+Brand
+
+Product
+
+Unit
+
+Product Variant
+
+Product Barcode
+
+Product Image
+
+Product Attribute
+
+==========================================================
+
+# Warehouse
+
+Warehouse
+
+Zone
+
+Bin Location
+
+==========================================================
+
+# Finance
+
+Currency
+
+Exchange Rate
+
+Tax
+
+Chart Of Account
+
+Payment Method
+
+Payment Term
+
+Bank
+
+==========================================================
+
+# Configuration
+
+Price List
+
+Document Numbering
+
+Workflow
+
+Approval
+
+Notification
+
+==========================================================
+
+# Master Rule
+
+Master Data
+
+dapat digunakan
+
+oleh banyak transaksi.
+
+==========================================================
+
+# Soft Delete
+
+Semua Master Data
+
+menggunakan
+
+Soft Delete.
+
+==========================================================
+
+# Status
+
+Semua Master
+
+memiliki
+
+Status Active
+
+Status Inactive
+
+==========================================================
+
+# Audit
+
+Seluruh perubahan
+
+Master Data
+
+masuk
+
+Audit Log.
+
+==========================================================
+
+# Multi Company
+
+Master tertentu
+
+dapat bersifat:
+
+Global
+
+atau
+
+Company Specific.
+
+==========================================================
+
+# Multi Branch
+
+Master tertentu
+
+dapat digunakan
+
+oleh banyak Branch.
+
+==========================================================
+
+# AI
+
+AI dapat
+
+menganalisis
+
+Master Data.
+
+AI tidak boleh
+
+mengubah Master Data.
+
+==========================================================
+
+# Success Criteria
+
+Seluruh transaksi
+
+menggunakan
+
+Master Data resmi.
+
+==========================================================
+
+Document Control
+
+Status          : Final
+
+Next Document   : TransactionDomain.md
+
+Approved By     : [F][N][R]
+
+==========================================================
