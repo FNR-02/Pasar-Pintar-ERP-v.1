@@ -1,0 +1,328 @@
+==========================================================
+PASAR PINTAR ERP
+==========================================================
+
+Document ID     : DOC-PROJ-005
+Title           : Feature List
+Version         : 0.1.0
+Status          : Final
+Author          : [F][N][R]
+Last Update     : 2026-07-30
+Module          : Project
+Category        : Documentation
+Priority        : Critical
+Related Docs    : README.md, Vision.md, Mission.md, Goals.md, Scope.md
+
+==========================================================
+
+# Feature List
+
+## Overview
+
+Dokumen ini berisi seluruh fitur ERP Pasar Pintar.
+
+Dokumen ini menjadi checklist utama selama proses pengembangan.
+
+==========================================================
+
+# CORE
+
+[ ] Login
+
+[ ] Logout
+
+[ ] Refresh Token
+
+[ ] User
+
+[ ] Role
+
+[ ] Permission
+
+[ ] Company
+
+[ ] Branch
+
+[ ] Tenant
+
+[ ] Profile
+
+[ ] Setting
+
+==========================================================
+
+# MASTER
+
+[ ] Category
+
+[ ] Brand
+
+[ ] Unit
+
+[ ] Tax
+
+[ ] Product
+
+[ ] Product Variant
+
+[ ] Product Barcode
+
+[ ] Product Image
+
+[ ] Product Vendor
+
+[ ] Vendor
+
+[ ] Customer
+
+==========================================================
+
+# WAREHOUSE
+
+[ ] Warehouse
+
+[ ] Warehouse Zone
+
+[ ] Bin Location
+
+[ ] Batch
+
+[ ] Serial Number
+
+==========================================================
+
+# INVENTORY
+
+[ ] Stock
+
+[ ] Stock Movement
+
+[ ] Stock Adjustment
+
+[ ] Stock Transfer
+
+[ ] Stock Reservation
+
+[ ] Stock Opname
+
+[ ] Cycle Count
+
+==========================================================
+
+# PURCHASING
+
+[ ] Purchase Request
+
+[ ] Vendor Quotation
+
+[ ] Purchase Order
+
+[ ] Goods Receipt
+
+[ ] Purchase Return
+
+[ ] Purchase Invoice
+
+[ ] Purchase Payment
+
+==========================================================
+
+# SALES
+
+[ ] Sales Quotation
+
+[ ] Sales Order
+
+[ ] Picking
+
+[ ] Packing
+
+[ ] Delivery Order
+
+[ ] Sales Invoice
+
+[ ] Sales Payment
+
+[ ] Sales Return
+
+==========================================================
+
+# POS
+
+[ ] POS Session
+
+[ ] Shift
+
+[ ] Cash Drawer
+
+[ ] POS Transaction
+
+[ ] POS Payment
+
+==========================================================
+
+# FINANCE
+
+[ ] Chart Of Account
+
+[ ] Journal
+
+[ ] Cash Bank
+
+[ ] Expense
+
+[ ] Income
+
+[ ] Accounts Receivable
+
+[ ] Accounts Payable
+
+[ ] Asset
+
+[ ] Depreciation
+
+==========================================================
+
+# CRM
+
+[ ] Customer Group
+
+[ ] Membership
+
+[ ] Loyalty Point
+
+[ ] Voucher
+
+[ ] Promotion
+
+[ ] Marketing Campaign
+
+[ ] Customer Timeline
+
+[ ] Customer Feedback
+
+==========================================================
+
+# SYSTEM
+
+[ ] Notification
+
+[ ] Workflow
+
+[ ] Approval Matrix
+
+[ ] Attachment
+
+[ ] Import
+
+[ ] Export
+
+[ ] Audit Log
+
+[ ] Activity Log
+
+[ ] Scheduler
+
+[ ] Backup
+
+==========================================================
+
+# AI
+
+[ ] AI Chat
+
+[ ] AI Agent
+
+[ ] AI Forecast
+
+[ ] AI Recommendation
+
+[ ] Executive Dashboard
+
+==========================================================
+
+# INTEGRATION
+
+[ ] WhatsApp
+
+[ ] Marketplace
+
+[ ] Payment Gateway
+
+[ ] Courier
+
+[ ] Barcode
+
+[ ] QR Code
+
+[ ] OCR
+
+==========================================================
+
+# MOBILE
+
+[ ] Android
+
+[ ] iOS
+
+==========================================================
+
+# DASHBOARD
+
+[ ] Owner Dashboard
+
+[ ] Finance Dashboard
+
+[ ] Purchasing Dashboard
+
+[ ] Sales Dashboard
+
+[ ] Warehouse Dashboard
+
+[ ] CRM Dashboard
+
+[ ] AI Dashboard
+
+==========================================================
+
+# IMPLEMENTATION STATUS
+
+Blueprint
+
+[✓]
+
+Documentation
+
+[ ]
+
+Database
+
+[ ]
+
+Backend
+
+[ ]
+
+Frontend
+
+[ ]
+
+Testing
+
+[ ]
+
+Production
+
+[ ]
+
+==========================================================
+
+Document Control
+
+Status          : Final
+
+Next Document   : ProjectStructure.md
+
+Approved By     : [F][N][R]
+
+==========================================================
