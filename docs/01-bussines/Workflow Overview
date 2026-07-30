@@ -1,0 +1,539 @@
+==========================================================
+PASAR PINTAR ERP
+==========================================================
+
+Document ID     : DOC-BIZ-004
+Title           : Workflow Overview
+Version         : 0.1.0
+Status          : Final
+Author          : [F][N][R]
+Last Update     : 2026-07-30
+Module          : Business
+Category        : Documentation
+Priority        : Critical
+Related Docs    : BusinessRules.md
+                  BusinessProcess.md
+                  ApprovalFlow.md
+
+==========================================================
+
+# Workflow Overview
+
+## Overview
+
+Workflow adalah perpindahan status sebuah dokumen
+dari awal hingga selesai.
+
+Semua transaksi ERP mengikuti workflow.
+
+Workflow tidak boleh di-hardcode
+di dalam source code.
+
+Workflow harus berasal dari
+Workflow Engine.
+
+==========================================================
+
+# Standard Workflow
+
+Draft
+
+↓
+
+Submitted
+
+↓
+
+Waiting Approval
+
+↓
+
+Approved
+
+↓
+
+Processing
+
+↓
+
+Completed
+
+↓
+
+Closed
+
+==========================================================
+
+# Reject Workflow
+
+Draft
+
+↓
+
+Submitted
+
+↓
+
+Rejected
+
+↓
+
+Revision
+
+↓
+
+Submitted
+
+==========================================================
+
+# Cancel Workflow
+
+Draft
+
+↓
+
+Cancelled
+
+==========================================================
+
+# Void Workflow
+
+Completed
+
+↓
+
+Void
+
+==========================================================
+
+# Purchase Request
+
+Draft
+
+↓
+
+Submitted
+
+↓
+
+Approved
+
+↓
+
+RFQ
+
+↓
+
+Purchase Order
+
+↓
+
+Completed
+
+==========================================================
+
+# Purchase Order
+
+Draft
+
+↓
+
+Submitted
+
+↓
+
+Approved
+
+↓
+
+Goods Receipt
+
+↓
+
+Completed
+
+↓
+
+Closed
+
+==========================================================
+
+# Goods Receipt
+
+Draft
+
+↓
+
+Submitted
+
+↓
+
+Approved
+
+↓
+
+Receive Product
+
+↓
+
+Stock Updated
+
+↓
+
+Completed
+
+==========================================================
+
+# Sales Order
+
+Draft
+
+↓
+
+Submitted
+
+↓
+
+Approved
+
+↓
+
+Reserved
+
+↓
+
+Picking
+
+↓
+
+Packing
+
+↓
+
+Delivery
+
+↓
+
+Completed
+
+==========================================================
+
+# Delivery Order
+
+Draft
+
+↓
+
+Submitted
+
+↓
+
+Approved
+
+↓
+
+Delivered
+
+↓
+
+Stock Reduced
+
+↓
+
+Completed
+
+==========================================================
+
+# Sales Invoice
+
+Draft
+
+↓
+
+Posted
+
+↓
+
+Paid
+
+↓
+
+Closed
+
+==========================================================
+
+# Purchase Invoice
+
+Draft
+
+↓
+
+Posted
+
+↓
+
+Paid
+
+↓
+
+Closed
+
+==========================================================
+
+# Stock Transfer
+
+Draft
+
+↓
+
+Submitted
+
+↓
+
+Approved
+
+↓
+
+Transfer Out
+
+↓
+
+In Transit
+
+↓
+
+Transfer In
+
+↓
+
+Completed
+
+==========================================================
+
+# Stock Adjustment
+
+Draft
+
+↓
+
+Submitted
+
+↓
+
+Approved
+
+↓
+
+Adjusted
+
+↓
+
+Completed
+
+==========================================================
+
+# Stock Opname
+
+Draft
+
+↓
+
+Counting
+
+↓
+
+Review
+
+↓
+
+Approved
+
+↓
+
+Adjustment
+
+↓
+
+Completed
+
+==========================================================
+
+# Customer Return
+
+Draft
+
+↓
+
+Inspection
+
+↓
+
+Approved
+
+↓
+
+Receive
+
+↓
+
+Credit Note
+
+↓
+
+Completed
+
+==========================================================
+
+# Vendor Return
+
+Draft
+
+↓
+
+Inspection
+
+↓
+
+Approved
+
+↓
+
+Shipment
+
+↓
+
+Debit Note
+
+↓
+
+Completed
+
+==========================================================
+
+# Finance Journal
+
+Draft
+
+↓
+
+Review
+
+↓
+
+Posted
+
+↓
+
+Closed
+
+==========================================================
+
+# POS Transaction
+
+Open
+
+↓
+
+Transaction
+
+↓
+
+Payment
+
+↓
+
+Receipt
+
+↓
+
+Completed
+
+==========================================================
+
+# Approval Node
+
+Workflow dapat memiliki:
+
+0 Approval
+
+↓
+
+1 Approval
+
+↓
+
+2 Approval
+
+↓
+
+N Approval
+
+==========================================================
+
+# Workflow Event
+
+Setiap perpindahan status menghasilkan:
+
+Activity Log
+
+Audit Log
+
+Notification
+
+Webhook
+
+AI Event
+
+==========================================================
+
+# Workflow Rule
+
+Workflow tidak boleh dilewati.
+
+Contoh
+
+Draft
+
+↓
+
+Completed
+
+(TIDAK DIPERBOLEHKAN)
+
+==========================================================
+
+# Permission Rule
+
+Hanya user yang memiliki permission
+yang dapat memindahkan status.
+
+==========================================================
+
+# AI Rule
+
+AI boleh memberikan rekomendasi.
+
+AI tidak boleh memindahkan status
+tanpa persetujuan sesuai aturan bisnis.
+
+==========================================================
+
+# Success Criteria
+
+Seluruh transaksi memiliki workflow.
+
+Workflow dapat dikonfigurasi.
+
+Workflow tidak di-hardcode.
+
+==========================================================
+
+Document Control
+
+Status          : Final
+
+Next Document   : ApprovalFlow.md
+
+Approved By     : [F][N][R]
+
+==========================================================
