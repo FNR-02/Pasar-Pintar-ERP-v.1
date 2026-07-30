@@ -1,0 +1,186 @@
+==========================================================
+PASAR PINTAR ERP
+==========================================================
+
+Document ID     : DOC-DB-005
+Title           : Migration Strategy
+Version         : 0.1.0
+Status          : Final
+Author          : [F][N][R]
+Last Update     : 2026-07-30
+Module          : Database
+Category        : Documentation
+Priority        : Critical
+Related Docs    : DatabaseArchitecture.md
+                  PrismaArchitecture.md
+
+==========================================================
+
+# Migration Strategy
+
+## Overview
+
+Dokumen ini menjelaskan
+strategi migrasi database
+menggunakan Prisma ORM.
+
+==========================================================
+
+# Migration Principle
+
+Perubahan struktur database
+harus melalui Migration.
+
+Tidak diperbolehkan
+mengubah database produksi
+secara manual.
+
+==========================================================
+
+# Baseline Migration
+
+Migration pertama
+membentuk struktur awal
+database.
+
+==========================================================
+
+# Incremental Migration
+
+Perubahan berikutnya
+dibuat dalam migration baru.
+
+Migration lama
+tidak diubah.
+
+==========================================================
+
+# Versioning
+
+Migration
+menggunakan
+urutan kronologis.
+
+==========================================================
+
+# Development
+
+Developer
+
+menggunakan
+
+prisma migrate dev
+
+==========================================================
+
+# Production
+
+Production
+
+menggunakan
+
+prisma migrate deploy
+
+==========================================================
+
+# Rollback
+
+Rollback
+dilakukan
+melalui migration baru.
+
+Tidak menghapus
+migration history.
+
+==========================================================
+
+# Seed
+
+Seed digunakan
+untuk:
+
+Role
+
+Permission
+
+Workflow
+
+Document Numbering
+
+Currency
+
+Tax
+
+Company
+
+==========================================================
+
+# Data Migration
+
+Perubahan data
+dipisahkan
+dari perubahan struktur.
+
+==========================================================
+
+# Backup
+
+Backup database
+wajib dilakukan
+sebelum migration
+di Production.
+
+==========================================================
+
+# Validation
+
+Migration
+harus diuji
+di Development
+dan Staging
+sebelum Production.
+
+==========================================================
+
+# Audit
+
+Seluruh migration
+tercatat
+di repository.
+
+==========================================================
+
+# Breaking Change
+
+Breaking Change
+harus memiliki
+rencana migrasi data.
+
+==========================================================
+
+# Naming
+
+Nama migration
+menggunakan
+deskripsi yang jelas.
+
+==========================================================
+
+# Success Criteria
+
+Migration
+aman,
+terstruktur,
+dan dapat diulang.
+
+==========================================================
+
+Document Control
+
+Status          : Final
+
+Next Document   : PrismaArchitecture.md
+
+Approved By     : [F][N][R]
+
+==========================================================
