@@ -1,0 +1,326 @@
+==========================================================
+PASAR PINTAR ERP
+==========================================================
+
+Document ID     : DOC-BIZ-011
+Title           : Permission Matrix
+Version         : 0.1.0
+Status          : Final
+Author          : [F][N][R]
+Last Update     : 2026-07-30
+Module          : Business
+Category        : Documentation
+Priority        : Critical
+Related Docs    : ApprovalFlow.md
+                  WorkflowOverview.md
+                  AccountingRules.md
+
+==========================================================
+
+# Permission Matrix
+
+## Overview
+
+Dokumen ini mendefinisikan
+hak akses seluruh pengguna
+Pasar Pintar ERP.
+
+Permission tidak boleh di-hardcode.
+
+Permission berasal dari
+Authorization Engine.
+
+==========================================================
+
+# Access Hierarchy
+
+Tenant
+
+↓
+
+Company
+
+↓
+
+Branch
+
+↓
+
+Warehouse
+
+↓
+
+Zone
+
+↓
+
+Bin
+
+==========================================================
+
+# User
+
+Satu User
+
+dapat memiliki
+
+lebih dari satu Role.
+
+==========================================================
+
+# Role
+
+Role adalah kumpulan Permission.
+
+==========================================================
+
+# Permission
+
+Permission adalah hak
+melakukan suatu aksi.
+
+==========================================================
+
+# Standard Action
+
+View
+
+Create
+
+Update
+
+Delete
+
+Approve
+
+Reject
+
+Post
+
+Cancel
+
+Void
+
+Export
+
+Import
+
+Print
+
+==========================================================
+
+# Module Permission
+
+Setiap Modul
+
+memiliki permission sendiri.
+
+Contoh
+
+Product.View
+
+Product.Create
+
+Product.Update
+
+Product.Delete
+
+----------------------------------------------------------
+
+PurchaseOrder.Create
+
+PurchaseOrder.Approve
+
+PurchaseOrder.Post
+
+----------------------------------------------------------
+
+SalesOrder.Create
+
+SalesOrder.Approve
+
+==========================================================
+
+# Scope Permission
+
+Permission dapat dibatasi:
+
+Tenant
+
+Company
+
+Branch
+
+Warehouse
+
+==========================================================
+
+# Example
+
+Manager Bandung
+
+↓
+
+Hanya dapat melihat
+
+Branch Bandung.
+
+==========================================================
+
+# Approval Permission
+
+Approve
+
+berbeda
+
+dengan
+
+Edit.
+
+==========================================================
+
+# Posting Permission
+
+Posting Journal
+
+hanya boleh
+
+Finance.
+
+==========================================================
+
+# Void Permission
+
+Void
+
+harus memiliki
+
+permission khusus.
+
+==========================================================
+
+# Delete Permission
+
+Delete
+
+Default
+
+Tidak Diizinkan.
+
+Gunakan
+
+Soft Delete.
+
+==========================================================
+
+# Super Admin
+
+Super Admin
+
+melewati
+
+semua permission
+
+kecuali
+
+aturan bisnis.
+
+==========================================================
+
+# Audit
+
+Semua Permission Check
+
+dapat dicatat
+
+ke Audit Log.
+
+==========================================================
+
+# Temporary Permission
+
+Permission
+
+dapat diberikan
+
+sementara.
+
+Memiliki
+
+Start Date
+
+End Date
+
+==========================================================
+
+# Delegation
+
+Delegasi
+
+tidak mengubah Role.
+
+Delegasi
+
+hanya memberikan
+
+hak sementara.
+
+==========================================================
+
+# API
+
+Semua API
+
+wajib melakukan
+
+Permission Check.
+
+==========================================================
+
+# Frontend
+
+Menu
+
+disembunyikan
+
+berdasarkan permission.
+
+==========================================================
+
+# AI
+
+AI
+
+tidak memiliki
+
+permission bawaan.
+
+AI menggunakan
+
+permission
+
+milik user
+
+yang menjalankan proses.
+
+==========================================================
+
+# Success Criteria
+
+Seluruh aksi
+
+divalidasi
+
+oleh Authorization Engine.
+
+==========================================================
+
+Document Control
+
+Status          : Final
+
+Next Document   : AuditRules.md
+
+Approved By     : [F][N][R]
+
+==========================================================
