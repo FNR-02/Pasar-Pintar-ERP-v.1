@@ -1,0 +1,261 @@
+==========================================================
+PASAR PINTAR ERP
+==========================================================
+
+Document ID     : DOC-DOM-001
+Title           : Domain Overview
+Version         : 0.1.0
+Status          : Final
+Author          : [F][N][R]
+Last Update     : 2026-07-30
+Module          : Domain
+Category        : Documentation
+Priority        : Critical
+Related Docs    : Business Rules
+                  Business Process
+
+==========================================================
+
+# Domain Overview
+
+## Overview
+
+Domain adalah pembagian area bisnis
+menjadi kelompok yang memiliki
+tanggung jawab masing-masing.
+
+Setiap Domain memiliki:
+
+Master Data
+
+Transaction
+
+Workflow
+
+Permission
+
+Audit
+
+==========================================================
+
+# Domain Architecture
+
+Core Domain
+
+↓
+
+Supporting Domain
+
+↓
+
+Infrastructure Domain
+
+==========================================================
+
+# Core Domain
+
+Core Domain adalah
+fitur utama ERP.
+
+==========================================================
+
+Master Data
+
+Inventory
+
+Purchasing
+
+Sales
+
+Finance
+
+CRM
+
+==========================================================
+
+# Supporting Domain
+
+Notification
+
+Workflow
+
+Approval
+
+Reporting
+
+AI
+
+Dashboard
+
+==========================================================
+
+# Infrastructure Domain
+
+Authentication
+
+Authorization
+
+Configuration
+
+Logging
+
+Audit
+
+Numbering
+
+File Storage
+
+==========================================================
+
+# Domain Relationship
+
+Master Data
+
+↓
+
+Purchasing
+
+↓
+
+Inventory
+
+↓
+
+Sales
+
+↓
+
+Finance
+
+↓
+
+Reporting
+
+↓
+
+AI
+
+==========================================================
+
+# Shared Engine
+
+Workflow Engine
+
+Approval Engine
+
+Stock Engine
+
+Price Engine
+
+Tax Engine
+
+Accounting Engine
+
+Notification Engine
+
+AI Engine
+
+==========================================================
+
+# Cross Domain Rule
+
+Satu Domain
+
+tidak boleh
+
+mengakses Database Domain lain
+secara langsung.
+
+Komunikasi dilakukan
+melalui Service Interface
+atau Event.
+
+==========================================================
+
+# Dependency Rule
+
+Master Data
+
+↓
+
+Inventory
+
+↓
+
+Purchasing
+
+↓
+
+Sales
+
+↓
+
+Finance
+
+==========================================================
+
+# Domain Responsibility
+
+Master Domain
+
+Mengelola data master.
+
+Inventory Domain
+
+Mengelola stok.
+
+Purchasing Domain
+
+Mengelola pembelian.
+
+Sales Domain
+
+Mengelola penjualan.
+
+Finance Domain
+
+Mengelola jurnal.
+
+==========================================================
+
+# Integration Rule
+
+Seluruh komunikasi antar Domain
+
+menggunakan
+
+Service
+
+Repository
+
+Event
+
+==========================================================
+
+# AI Domain
+
+AI tidak menjadi
+pemilik data.
+
+AI hanya membaca
+dan memberikan rekomendasi.
+
+==========================================================
+
+# Success Criteria
+
+Seluruh modul
+memiliki batas tanggung jawab
+yang jelas.
+
+==========================================================
+
+Document Control
+
+Status          : Final
+
+Next Document   : MasterDataDomain.md
+
+Approved By     : [F][N][R]
+
+==========================================================
