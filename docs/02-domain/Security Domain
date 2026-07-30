@@ -1,0 +1,221 @@
+==========================================================
+PASAR PINTAR ERP
+==========================================================
+
+Document ID     : DOC-DOM-005
+Title           : Security Domain
+Version         : 0.1.0
+Status          : Final
+Author          : [F][N][R]
+Last Update     : 2026-07-30
+Module          : Domain
+Category        : Documentation
+Priority        : Critical
+Related Docs    : PermissionMatrix.md
+                  AuditRules.md
+                  DomainOverview.md
+
+==========================================================
+
+# Security Domain
+
+## Overview
+
+Security Domain bertanggung jawab
+mengelola autentikasi,
+otorisasi,
+keamanan API,
+manajemen sesi,
+dan keamanan data.
+
+==========================================================
+
+# Authentication
+
+Authentication
+memastikan identitas pengguna.
+
+Metode:
+
+Username
+
+Email
+
+Nomor Telepon
+
+Single Sign-On (Future)
+
+==========================================================
+
+# Authorization
+
+Authorization
+menentukan hak akses pengguna
+berdasarkan Role
+dan Permission.
+
+==========================================================
+
+# User
+
+User memiliki:
+
+Profile
+
+Role
+
+Permission
+
+Status
+
+==========================================================
+
+# Role
+
+Satu Role
+berisi banyak Permission.
+
+==========================================================
+
+# Permission
+
+Permission menentukan
+aksi yang dapat dilakukan
+oleh User.
+
+==========================================================
+
+# Session
+
+Session menyimpan:
+
+Login Time
+
+Last Activity
+
+Device
+
+IP Address
+
+==========================================================
+
+# Token
+
+Menggunakan:
+
+Access Token
+
+Refresh Token
+
+==========================================================
+
+# Password
+
+Password disimpan
+dalam bentuk Hash.
+
+Password
+tidak boleh disimpan
+dalam bentuk Plain Text.
+
+==========================================================
+
+# Multi Factor Authentication
+
+MFA bersifat opsional.
+
+Dapat menggunakan:
+
+OTP
+
+Authenticator App
+
+==========================================================
+
+# Multi Tenant
+
+Data Tenant
+harus terisolasi.
+
+User Tenant A
+tidak boleh
+mengakses data Tenant B.
+
+==========================================================
+
+# API Security
+
+Seluruh API
+wajib melalui:
+
+Authentication
+
+Authorization
+
+Permission Check
+
+==========================================================
+
+# Login Policy
+
+Mendukung:
+
+Maximum Failed Login
+
+Temporary Lock
+
+Account Lock
+
+==========================================================
+
+# Password Policy
+
+Minimal panjang password.
+
+Mendukung:
+
+Huruf Besar
+
+Huruf Kecil
+
+Angka
+
+Karakter Khusus
+
+==========================================================
+
+# Audit
+
+Seluruh aktivitas keamanan
+masuk Security Log.
+
+==========================================================
+
+# AI
+
+AI menggunakan
+identitas pengguna
+yang sedang aktif.
+
+AI tidak memiliki
+akun khusus.
+
+==========================================================
+
+# Success Criteria
+
+Seluruh akses sistem
+diamankan
+oleh Security Domain.
+
+==========================================================
+
+Document Control
+
+Status          : Final
+
+Next Document   : AIIntegrationDomain.md
+
+Approved By     : [F][N][R]
+
+==========================================================
