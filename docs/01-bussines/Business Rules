@@ -1,0 +1,422 @@
+==========================================================
+PASAR PINTAR ERP
+==========================================================
+
+Document ID     : DOC-BIZ-001
+Title           : Business Rules
+Version         : 0.1.0
+Status          : Final
+Author          : [F][N][R]
+Last Update     : 2026-07-30
+Module          : Business
+Category        : Documentation
+Priority        : Critical
+Related Docs    : BusinessProcess.md, WorkflowOverview.md
+
+==========================================================
+
+# Business Rules
+
+## Overview
+
+Dokumen ini berisi seluruh aturan bisnis
+yang menjadi dasar pembangunan
+Pasar Pintar ERP.
+
+Seluruh database,
+API,
+Frontend,
+AI,
+dan Workflow
+wajib mengikuti aturan ini.
+
+==========================================================
+
+# Rule 1
+
+Satu Tenant
+
+↓
+
+Memiliki
+
+Banyak Company
+
+==========================================================
+
+# Rule 2
+
+Satu Company
+
+↓
+
+Memiliki
+
+Banyak Branch
+
+==========================================================
+
+# Rule 3
+
+Satu Branch
+
+↓
+
+Memiliki
+
+Banyak Warehouse
+
+==========================================================
+
+# Rule 4
+
+Satu Warehouse
+
+↓
+
+Memiliki
+
+Banyak Zone
+
+==========================================================
+
+# Rule 5
+
+Satu Zone
+
+↓
+
+Memiliki
+
+Banyak Bin Location
+
+==========================================================
+
+# Rule 6
+
+Satu Product
+
+↓
+
+Dapat berada
+
+di banyak Warehouse
+
+==========================================================
+
+# Rule 7
+
+Satu Warehouse
+
+↓
+
+Memiliki
+
+Banyak Product
+
+==========================================================
+
+# Rule 8
+
+Stok
+
+Tidak disimpan
+
+di Product
+
+Stok selalu berasal
+
+dari Inventory
+
+==========================================================
+
+# Rule 9
+
+Seluruh perubahan stok
+
+harus menghasilkan
+
+Stock Movement
+
+==========================================================
+
+# Rule 10
+
+Tidak boleh
+
+mengubah stok
+
+secara langsung
+
+==========================================================
+
+# Rule 11
+
+Stock bertambah
+
+karena
+
+Goods Receipt
+
+Stock Adjustment
+
+Sales Return
+
+Purchase Return Cancel
+
+Transfer In
+
+Opening Balance
+
+==========================================================
+
+# Rule 12
+
+Stock berkurang
+
+karena
+
+Delivery
+
+POS
+
+Sales
+
+Stock Adjustment
+
+Transfer Out
+
+Damage
+
+Expired
+
+==========================================================
+
+# Rule 13
+
+Purchase
+
+tidak menambah stok
+
+Goods Receipt
+
+yang menambah stok
+
+==========================================================
+
+# Rule 14
+
+Sales Order
+
+tidak mengurangi stok
+
+Delivery
+
+yang mengurangi stok
+
+==========================================================
+
+# Rule 15
+
+Invoice
+
+tidak mempengaruhi stok
+
+==========================================================
+
+# Rule 16
+
+Payment
+
+tidak mempengaruhi stok
+
+==========================================================
+
+# Rule 17
+
+Semua transaksi
+
+harus memiliki
+
+Status
+
+==========================================================
+
+# Rule 18
+
+Status
+
+tidak boleh
+
+hardcode
+
+Status berasal
+
+dari Workflow
+
+==========================================================
+
+# Rule 19
+
+Semua Approval
+
+berasal
+
+dari Approval Matrix
+
+==========================================================
+
+# Rule 20
+
+Nomor Dokumen
+
+dibuat otomatis
+
+berdasarkan
+
+Document Numbering
+
+==========================================================
+
+# Rule 21
+
+Seluruh transaksi
+
+harus memiliki
+
+Company
+
+Branch
+
+CreatedBy
+
+CreatedAt
+
+==========================================================
+
+# Rule 22
+
+Seluruh Master
+
+menggunakan
+
+Soft Delete
+
+==========================================================
+
+# Rule 23
+
+Transaksi yang sudah diposting
+
+tidak boleh
+
+dihapus
+
+Status
+
+Cancelled
+
+Void
+
+Closed
+
+==========================================================
+
+# Rule 24
+
+Semua perubahan data
+
+menghasilkan
+
+Audit Log
+
+==========================================================
+
+# Rule 25
+
+Semua aktivitas
+
+menghasilkan
+
+Activity Log
+
+==========================================================
+
+# Rule 26
+
+Satu Product
+
+boleh memiliki
+
+banyak Vendor
+
+==========================================================
+
+# Rule 27
+
+Satu Vendor
+
+boleh menjual
+
+banyak Product
+
+==========================================================
+
+# Rule 28
+
+Harga pembelian
+
+boleh berbeda
+
+untuk setiap Vendor
+
+==========================================================
+
+# Rule 29
+
+Harga jual
+
+dapat berbeda
+
+berdasarkan
+
+Price List
+
+Customer Group
+
+Promotion
+
+==========================================================
+
+# Rule 30
+
+AI
+
+tidak boleh
+
+mengubah data transaksi
+
+secara otomatis
+
+tanpa aturan bisnis
+yang mengizinkannya.
+
+==========================================================
+
+# Success Criteria
+
+Seluruh modul ERP
+
+mengikuti aturan ini.
+
+==========================================================
+
+Document Control
+
+Status          : Final
+
+Next Document   : BusinessProcess.md
+
+Approved By     : [F][N][R]
+
+==========================================================
