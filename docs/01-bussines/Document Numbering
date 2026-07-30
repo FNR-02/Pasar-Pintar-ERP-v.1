@@ -1,0 +1,340 @@
+==========================================================
+PASAR PINTAR ERP
+==========================================================
+
+Document ID     : DOC-BIZ-006
+Title           : Document Numbering
+Version         : 0.1.0
+Status          : Final
+Author          : [F][N][R]
+Last Update     : 2026-07-30
+Module          : Business
+Category        : Documentation
+Priority        : Critical
+Related Docs    : WorkflowOverview.md
+                  ApprovalFlow.md
+
+==========================================================
+
+# Document Numbering
+
+## Overview
+
+Seluruh nomor dokumen pada Pasar Pintar ERP
+dibuat oleh Numbering Engine.
+
+Nomor dokumen tidak boleh dibuat
+secara manual maupun hardcode
+di masing-masing modul.
+
+==========================================================
+
+# Objective
+
+Menjamin bahwa:
+
+- Nomor dokumen unik
+- Mudah dibaca
+- Mudah dicari
+- Dapat dikonfigurasi
+- Mendukung Multi Company
+- Mendukung Multi Branch
+- Mendukung Multi Warehouse
+- Mendukung Multi Tenant
+
+==========================================================
+
+# General Format
+
+[PREFIX]-[LOCATION]-[DATE]-[SEQUENCE]
+
+==========================================================
+
+# Prefix
+
+PR
+
+Purchase Request
+
+PO
+
+Purchase Order
+
+GR
+
+Goods Receipt
+
+PI
+
+Purchase Invoice
+
+PP
+
+Purchase Payment
+
+SO
+
+Sales Order
+
+DO
+
+Delivery Order
+
+SI
+
+Sales Invoice
+
+SP
+
+Sales Payment
+
+SR
+
+Sales Return
+
+VR
+
+Vendor Return
+
+ST
+
+Stock Transfer
+
+SA
+
+Stock Adjustment
+
+OP
+
+Stock Opname
+
+JV
+
+Journal Voucher
+
+EX
+
+Expense
+
+IN
+
+Income
+
+AST
+
+Asset
+
+CUS
+
+Customer
+
+VEN
+
+Vendor
+
+PRD
+
+Product
+
+WH
+
+Warehouse
+
+==========================================================
+
+# Location Code
+
+Contoh
+
+BDG
+
+Bandung
+
+CJR
+
+Cianjur
+
+GRT
+
+Garut
+
+SBY
+
+Surabaya
+
+JKT
+
+Jakarta
+
+==========================================================
+
+# Date Format
+
+YYYYMMDD
+
+Contoh
+
+20260730
+
+==========================================================
+
+# Sequence
+
+6 digit
+
+000001
+
+000002
+
+000003
+
+...
+
+==========================================================
+
+# Example
+
+PO-BDG-20260730-000001
+
+SO-CJR-20260730-000012
+
+GR-BDG-20260730-000103
+
+==========================================================
+
+# Reset Sequence
+
+Engine mendukung:
+
+Tidak Pernah Reset
+
+Harian
+
+Bulanan
+
+Tahunan
+
+==========================================================
+
+# Multi Company
+
+Setiap Company
+memiliki sequence sendiri.
+
+==========================================================
+
+# Multi Branch
+
+Setiap Branch
+memiliki sequence sendiri.
+
+==========================================================
+
+# Multi Warehouse
+
+Warehouse dapat memiliki
+sequence sendiri
+jika diperlukan.
+
+==========================================================
+
+# Editable
+
+Nomor dokumen
+tidak boleh diedit
+setelah dibuat.
+
+==========================================================
+
+# Duplicate Rule
+
+Tidak boleh ada
+nomor dokumen yang sama
+dalam satu tenant.
+
+==========================================================
+
+# Cancelled Document
+
+Nomor yang sudah digunakan
+
+tidak boleh digunakan kembali.
+
+==========================================================
+
+# Void Document
+
+Nomor tetap dipertahankan.
+
+==========================================================
+
+# Manual Number
+
+Manual Number
+
+Default
+
+Tidak Diizinkan
+
+Jika diaktifkan,
+tetap harus dilakukan
+validasi keunikan.
+
+==========================================================
+
+# Number Preview
+
+Sistem dapat menampilkan
+
+Preview
+
+nomor berikutnya
+tanpa mengunci sequence.
+
+==========================================================
+
+# Number Reservation
+
+Nomor baru benar-benar
+dialokasikan ketika
+dokumen berhasil disimpan.
+
+==========================================================
+
+# Audit
+
+Seluruh pembuatan nomor
+wajib masuk Audit Log.
+
+==========================================================
+
+# AI
+
+AI dapat membaca
+nomor dokumen.
+
+AI tidak boleh
+menghasilkan nomor dokumen.
+
+==========================================================
+
+# Success Criteria
+
+Seluruh dokumen
+menggunakan Numbering Engine.
+
+Tidak ada nomor ganda.
+
+Tidak ada hardcode.
+
+==========================================================
+
+Document Control
+
+Status          : Final
+
+Next Document   : StockRules.md
+
+Approved By     : [F][N][R]
+
+==========================================================
