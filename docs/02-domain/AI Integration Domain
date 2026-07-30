@@ -1,0 +1,302 @@
+==========================================================
+PASAR PINTAR ERP
+==========================================================
+
+Document ID     : DOC-DOM-006
+Title           : AI Integration Domain
+Version         : 0.1.0
+Status          : Final
+Author          : [F][N][R]
+Last Update     : 2026-07-30
+Module          : Domain
+Category        : Documentation
+Priority        : Critical
+Related Docs    : DomainOverview.md
+                  AuditRules.md
+                  SecurityDomain.md
+
+==========================================================
+
+# AI Integration Domain
+
+## Overview
+
+AI Domain bertanggung jawab
+memberikan analisis,
+prediksi,
+dan rekomendasi
+kepada pengguna.
+
+AI bukan pemilik data.
+
+AI tidak boleh
+mengubah data bisnis
+secara langsung.
+
+==========================================================
+
+# AI Position
+
+AI adalah
+
+Supporting Domain.
+
+==========================================================
+
+# AI Source
+
+AI membaca data dari:
+
+Master Data
+
+Inventory
+
+Purchasing
+
+Sales
+
+Finance
+
+CRM
+
+Reporting
+
+Audit
+
+==========================================================
+
+# AI Capability
+
+Recommendation
+
+Prediction
+
+Classification
+
+Summarization
+
+Question Answering
+
+Data Analysis
+
+==========================================================
+
+# AI Scope
+
+Inventory
+
+Sales
+
+Purchasing
+
+Finance
+
+Marketing
+
+Customer
+
+Vendor
+
+Dashboard
+
+==========================================================
+
+# Inventory AI
+
+Forecast Stock
+
+Slow Moving
+
+Fast Moving
+
+Dead Stock
+
+Reorder Recommendation
+
+==========================================================
+
+# Sales AI
+
+Sales Forecast
+
+Best Seller
+
+Cross Selling
+
+Upselling
+
+Promotion Recommendation
+
+==========================================================
+
+# Purchasing AI
+
+Vendor Recommendation
+
+Purchase Recommendation
+
+Lead Time Analysis
+
+Vendor Performance
+
+==========================================================
+
+# Finance AI
+
+Profit Analysis
+
+Cash Flow Prediction
+
+Expense Analysis
+
+Margin Analysis
+
+==========================================================
+
+# CRM AI
+
+Customer Segmentation
+
+Customer Churn Prediction
+
+Customer Recommendation
+
+==========================================================
+
+# Dashboard AI
+
+Daily Summary
+
+Weekly Summary
+
+Monthly Summary
+
+Business Insight
+
+==========================================================
+
+# AI Restriction
+
+AI tidak boleh:
+
+Post Journal
+
+Approve Document
+
+Mengubah Stock
+
+Mengubah Harga
+
+Mengubah Pajak
+
+Mengubah Permission
+
+==========================================================
+
+# AI Execution
+
+User Request
+
+↓
+
+Permission Validation
+
+↓
+
+Business Rule Validation
+
+↓
+
+AI Processing
+
+↓
+
+Recommendation
+
+==========================================================
+
+# AI Log
+
+Semua aktivitas AI
+harus disimpan.
+
+==========================================================
+
+# AI Prompt
+
+Prompt
+
+Context
+
+Response
+
+Execution Time
+
+User
+
+==========================================================
+
+# AI Model
+
+Mendukung:
+
+Cloud AI
+
+Local AI
+
+Hybrid AI
+
+==========================================================
+
+# AI Provider
+
+Provider dapat diganti
+melalui konfigurasi.
+
+==========================================================
+
+# AI Knowledge
+
+AI menggunakan:
+
+Database
+
+Business Rules
+
+Workflow
+
+Audit
+
+Document
+
+==========================================================
+
+# AI Security
+
+AI menggunakan
+permission user.
+
+AI tidak memiliki
+akses penuh.
+
+==========================================================
+
+# Success Criteria
+
+AI membantu
+pengambilan keputusan.
+
+AI tidak mengambil
+keputusan bisnis.
+
+==========================================================
+
+Document Control
+
+Status          : Final
+
+Next Document   : DatabaseArchitecture.md
+
+Approved By     : [F][N][R]
+
+==========================================================
