@@ -1,0 +1,266 @@
+==========================================================
+PASAR PINTAR ERP
+==========================================================
+
+Document ID     : DOC-DB-001
+Title           : Database Architecture
+Version         : 0.1.0
+Status          : Final
+Author          : [F][N][R]
+Last Update     : 2026-07-30
+Module          : Database
+Category        : Documentation
+Priority        : Critical
+Related Docs    : DomainOverview.md
+                  MasterDataDomain.md
+                  TransactionDomain.md
+
+==========================================================
+
+# Database Architecture
+
+## Overview
+
+Dokumen ini mendefinisikan
+arsitektur database
+Pasar Pintar ERP.
+
+Seluruh tabel
+mengikuti standar ini.
+
+==========================================================
+
+# Database Type
+
+Primary Database
+
+PostgreSQL
+
+ORM
+
+Prisma ORM
+
+==========================================================
+
+# Database Principle
+
+Database dirancang:
+
+Normalisasi
+
+Konsisten
+
+Scalable
+
+Auditable
+
+==========================================================
+
+# Layer
+
+Master Data
+
+↓
+
+Transaction
+
+↓
+
+Engine
+
+↓
+
+Audit
+
+↓
+
+Reporting
+
+==========================================================
+
+# Entity Type
+
+Master
+
+Transaction
+
+Reference
+
+System
+
+Audit
+
+==========================================================
+
+# Master Entity
+
+Contoh
+
+Product
+
+Customer
+
+Vendor
+
+Warehouse
+
+==========================================================
+
+# Transaction Entity
+
+Contoh
+
+Purchase Order
+
+Sales Order
+
+Goods Receipt
+
+Journal
+
+==========================================================
+
+# System Entity
+
+User
+
+Role
+
+Permission
+
+Workflow
+
+Approval
+
+==========================================================
+
+# Audit Entity
+
+Audit Log
+
+Activity Log
+
+Login Log
+
+Workflow Log
+
+==========================================================
+
+# Reference Entity
+
+Country
+
+Province
+
+City
+
+Currency
+
+Tax
+
+==========================================================
+
+# Relationship
+
+One To One
+
+One To Many
+
+Many To Many
+
+==========================================================
+
+# Primary Key
+
+Seluruh tabel
+
+menggunakan
+
+UUID.
+
+==========================================================
+
+# Foreign Key
+
+Seluruh relasi
+
+menggunakan UUID.
+
+==========================================================
+
+# Soft Delete
+
+Seluruh Master
+
+menggunakan
+
+Soft Delete.
+
+==========================================================
+
+# Audit Field
+
+createdBy
+
+createdAt
+
+updatedBy
+
+updatedAt
+
+deletedBy
+
+deletedAt
+
+==========================================================
+
+# Status
+
+Entity memiliki
+status
+sesuai kebutuhan bisnis.
+
+==========================================================
+
+# Event Driven
+
+Perubahan data
+
+menghasilkan Event.
+
+==========================================================
+
+# Reporting
+
+Reporting
+
+tidak mengubah data.
+
+==========================================================
+
+# AI
+
+AI hanya membaca
+database.
+
+==========================================================
+
+# Success Criteria
+
+Database
+
+mudah dikembangkan
+
+dan mudah dipelihara.
+
+==========================================================
+
+Document Control
+
+Status          : Final
+
+Next Document   : DatabaseNamingConvention.md
+
+Approved By     : [F][N][R]
+
+==========================================================
