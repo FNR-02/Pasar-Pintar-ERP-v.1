@@ -1,0 +1,527 @@
+==========================================================
+PASAR PINTAR ERP
+==========================================================
+
+Document ID     : DOC-BIZ-002
+Title           : Business Process
+Version         : 0.1.0
+Status          : Final
+Author          : [F][N][R]
+Last Update     : 2026-07-30
+Module          : Business
+Category        : Documentation
+Priority        : Critical
+Related Docs    : BusinessRules.md, WorkflowOverview.md
+
+==========================================================
+
+# Business Process
+
+## Overview
+
+Dokumen ini menjelaskan alur proses bisnis utama
+yang didukung oleh Pasar Pintar ERP.
+
+Seluruh modul harus mengikuti proses bisnis ini.
+
+==========================================================
+
+# Core Business Process
+
+Master Data
+
+↓
+
+Purchasing
+
+↓
+
+Inventory
+
+↓
+
+Sales
+
+↓
+
+Finance
+
+↓
+
+Reporting
+
+↓
+
+AI Analysis
+
+==========================================================
+
+# Purchasing Process
+
+Purchase Request
+
+↓
+
+Approval
+
+↓
+
+Request For Quotation (RFQ)
+
+↓
+
+Vendor Quotation
+
+↓
+
+Quotation Evaluation
+
+↓
+
+Purchase Order
+
+↓
+
+PO Approval
+
+↓
+
+Goods Receipt
+
+↓
+
+Quality Inspection (Optional)
+
+↓
+
+Purchase Invoice
+
+↓
+
+Purchase Payment
+
+↓
+
+Finish
+
+==========================================================
+
+# Inventory Process
+
+Opening Balance
+
+↓
+
+Goods Receipt
+
+↓
+
+Put Away
+
+↓
+
+Stock Available
+
+↓
+
+Stock Reservation
+
+↓
+
+Picking
+
+↓
+
+Packing
+
+↓
+
+Delivery
+
+↓
+
+Stock Reduced
+
+==========================================================
+
+# Stock Transfer Process
+
+Transfer Request
+
+↓
+
+Approval
+
+↓
+
+Transfer Out
+
+↓
+
+In Transit
+
+↓
+
+Transfer In
+
+↓
+
+Finish
+
+==========================================================
+
+# Stock Adjustment Process
+
+Adjustment Request
+
+↓
+
+Approval
+
+↓
+
+Stock Adjustment
+
+↓
+
+Stock Movement
+
+↓
+
+Finish
+
+==========================================================
+
+# Stock Opname Process
+
+Create Stock Opname
+
+↓
+
+Physical Counting
+
+↓
+
+Difference Analysis
+
+↓
+
+Approval
+
+↓
+
+Adjustment
+
+↓
+
+Finish
+
+==========================================================
+
+# Sales Process
+
+Sales Quotation
+
+↓
+
+Sales Order
+
+↓
+
+Approval (Optional)
+
+↓
+
+Stock Reservation
+
+↓
+
+Picking
+
+↓
+
+Packing
+
+↓
+
+Delivery Order
+
+↓
+
+Sales Invoice
+
+↓
+
+Payment
+
+↓
+
+Finish
+
+==========================================================
+
+# POS Process
+
+Open Shift
+
+↓
+
+POS Session
+
+↓
+
+Transaction
+
+↓
+
+Payment
+
+↓
+
+Receipt
+
+↓
+
+Close Shift
+
+==========================================================
+
+# Customer Return Process
+
+Return Request
+
+↓
+
+Inspection
+
+↓
+
+Approval
+
+↓
+
+Stock Return
+
+↓
+
+Credit Note
+
+↓
+
+Finish
+
+==========================================================
+
+# Vendor Return Process
+
+Return Request
+
+↓
+
+Approval
+
+↓
+
+Return Shipment
+
+↓
+
+Vendor Receive
+
+↓
+
+Debit Note
+
+↓
+
+Finish
+
+==========================================================
+
+# Finance Process
+
+Journal
+
+↓
+
+Posting
+
+↓
+
+General Ledger
+
+↓
+
+Trial Balance
+
+↓
+
+Financial Statement
+
+==========================================================
+
+# AI Process
+
+Collect Data
+
+↓
+
+Analyze
+
+↓
+
+Forecast
+
+↓
+
+Recommendation
+
+↓
+
+User Approval (Optional)
+
+↓
+
+Execution
+
+==========================================================
+
+# Notification Process
+
+Event
+
+↓
+
+Rule Engine
+
+↓
+
+Notification
+
+↓
+
+Email
+
+↓
+
+WhatsApp
+
+↓
+
+In App Notification
+
+==========================================================
+
+# Approval Process
+
+Document Created
+
+↓
+
+Approval Matrix
+
+↓
+
+Approver
+
+↓
+
+Approved / Rejected
+
+↓
+
+Workflow Continue
+
+==========================================================
+
+# Document Lifecycle
+
+Draft
+
+↓
+
+Submitted
+
+↓
+
+Approved
+
+↓
+
+Processed
+
+↓
+
+Completed
+
+↓
+
+Closed
+
+==========================================================
+
+# Cross Module Integration
+
+Purchasing
+
+↓
+
+Inventory
+
+↓
+
+Finance
+
+----------------------------
+
+Sales
+
+↓
+
+Inventory
+
+↓
+
+Finance
+
+----------------------------
+
+CRM
+
+↓
+
+Sales
+
+↓
+
+Finance
+
+----------------------------
+
+AI
+
+↓
+
+Semua Modul
+
+==========================================================
+
+# Success Criteria
+
+Seluruh proses bisnis memiliki workflow yang jelas.
+
+Tidak ada transaksi yang melompati tahapan proses.
+
+Setiap tahapan dapat ditelusuri melalui Audit Log.
+
+==========================================================
+
+Document Control
+
+Status          : Final
+
+Next Document   : WorkflowOverview.md
+
+Approved By     : [F][N][R]
+
+==========================================================
