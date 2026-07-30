@@ -1,0 +1,334 @@
+==========================================================
+PASAR PINTAR ERP
+==========================================================
+
+Document ID     : DOC-DOM-003
+Title           : Transaction Domain
+Version         : 0.1.0
+Status          : Final
+Author          : [F][N][R]
+Last Update     : 2026-07-30
+Module          : Domain
+Category        : Documentation
+Priority        : Critical
+Related Docs    : MasterDataDomain.md
+                  WorkflowOverview.md
+                  StockRules.md
+
+==========================================================
+
+# Transaction Domain
+
+## Overview
+
+Transaction Domain mengelola
+seluruh aktivitas bisnis
+yang menghasilkan perubahan data,
+stok,
+keuangan,
+atau workflow.
+
+==========================================================
+
+# Purchasing Domain
+
+Purchase Request
+
+↓
+
+Request For Quotation
+
+↓
+
+Vendor Quotation
+
+↓
+
+Purchase Order
+
+↓
+
+Goods Receipt
+
+↓
+
+Purchase Invoice
+
+↓
+
+Purchase Payment
+
+==========================================================
+
+# Sales Domain
+
+Sales Quotation
+
+↓
+
+Sales Order
+
+↓
+
+Delivery Order
+
+↓
+
+Sales Invoice
+
+↓
+
+Sales Payment
+
+==========================================================
+
+# Inventory Domain
+
+Stock Movement
+
+↓
+
+Stock Transfer
+
+↓
+
+Stock Adjustment
+
+↓
+
+Stock Opname
+
+↓
+
+Cycle Count
+
+==========================================================
+
+# Return Domain
+
+Sales Return
+
+↓
+
+Purchase Return
+
+↓
+
+Credit Note
+
+↓
+
+Debit Note
+
+==========================================================
+
+# Finance Domain
+
+Journal
+
+↓
+
+Cash In
+
+↓
+
+Cash Out
+
+↓
+
+Expense
+
+↓
+
+Income
+
+==========================================================
+
+# POS Domain
+
+Open Shift
+
+↓
+
+POS Transaction
+
+↓
+
+Receipt
+
+↓
+
+Close Shift
+
+==========================================================
+
+# CRM Domain
+
+Lead
+
+↓
+
+Opportunity
+
+↓
+
+Quotation
+
+↓
+
+Customer
+
+==========================================================
+
+# Shared Document
+
+Approval
+
+Workflow
+
+Attachment
+
+Comment
+
+Activity
+
+Audit
+
+==========================================================
+
+# Common Rule
+
+Semua transaksi memiliki:
+
+Document Number
+
+Status
+
+Workflow
+
+Created By
+
+Created At
+
+Updated By
+
+Updated At
+
+==========================================================
+
+# Soft Delete
+
+Transaksi
+
+tidak boleh
+
+dihapus.
+
+==========================================================
+
+# Cancel Rule
+
+Gunakan
+
+Cancelled.
+
+==========================================================
+
+# Void Rule
+
+Gunakan
+
+Void.
+
+==========================================================
+
+# Posting Rule
+
+Posting dilakukan
+sesuai workflow.
+
+==========================================================
+
+# Stock Rule
+
+Perubahan stok
+
+harus melalui
+
+Stock Engine.
+
+==========================================================
+
+# Tax Rule
+
+Perhitungan pajak
+
+melalui
+
+Tax Engine.
+
+==========================================================
+
+# Accounting Rule
+
+Jurnal
+
+dibuat oleh
+
+Accounting Engine.
+
+==========================================================
+
+# Notification Rule
+
+Seluruh transaksi
+
+dapat menghasilkan
+
+Notification.
+
+==========================================================
+
+# AI Rule
+
+AI dapat:
+
+Menganalisis
+
+Memprediksi
+
+Memberikan rekomendasi
+
+AI tidak boleh
+
+mengubah transaksi.
+
+==========================================================
+
+# Success Criteria
+
+Semua transaksi
+
+mengikuti
+
+Workflow,
+
+Approval,
+
+Audit,
+
+dan
+
+Business Rules.
+
+==========================================================
+
+Document Control
+
+Status          : Final
+
+Next Document   : FinanceDomain.md
+
+Approved By     : [F][N][R]
+
+==========================================================
